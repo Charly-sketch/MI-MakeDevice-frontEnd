@@ -66,8 +66,11 @@ Globals.assign({
   frameLoop: "always",
 });
 
-//const DynamicHomePage: NextPage = dynamic(() => import(Home));
+import { raf } from '@react-spring/rafz'
+raf.frameLoop = 'demand'
 
+
+//const DynamicHomePage: NextPage = dynamic(() => import(Home));
 const Home: NextPage = () => {
   useEffect(() => { }, []);
 
