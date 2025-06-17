@@ -1,0 +1,2682 @@
+[
+  {
+    "id": "yahboom-microbitledv10",
+    "name": "Microbit-LED",
+    "company": "Yahboom",
+    "description": "The expansion board integrates 24 programmable RGB lights and microphones, and you can control the on-board RGB lights by the microphone.",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "yahboom-microbitledv10",
+        "slug": "pelikhan/yahboom-microbit-led-jacdac"
+      }
+    ],
+    "connector": "noConnector",
+    "link": "https://category.yahboom.net/products/rgbledb",
+    "storeLink": ["https://category.yahboom.net/products/rgbledb"],
+    "services": [369743088, 346888797],
+    "productIdentifiers": [978358865],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "yahboom-tinybitv13",
+    "name": "Tiny-Bit",
+    "company": "Yahboom",
+    "description": "Tiny:bit is a robotic car for the micro:bit education market. It is compact, easy to assemble, and easy to move in tight spaces. The Tiny:bit smart car is based on the micro:bit development board design and uses the online code programming of MakeCode Editor. Rich sensor applications allow Tiny:bit for easy interaction. The Tiny:bit smart car has a set of alligator clips on the rear that can be creative and expand.",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "yahboom-tinybitv13",
+        "slug": "pelikhan/Tiny-bitLib/tree/master/jacdac"
+      }
+    ],
+    "connector": "noConnector",
+    "link": "https://category.yahboom.net/products/tinybit",
+    "storeLink": ["https://category.yahboom.net/products/tinybit"],
+    "services": [
+      355063095, 369743088, 369743088, 309087410, 309087410, 337275786,
+      346888797
+    ],
+    "productIdentifiers": [878674793],
+    "version": "1.3",
+    "status": "stable"
+  },
+  {
+    "id": "unexpected-maker-feathers2esp32s2v20",
+    "name": "FeatherS2 ESP32-S2",
+    "company": "Unexpected Maker",
+    "description": "The full-featured ESP32-S2 based development board in a Feather format from Unexpected Maker. The FeatherS2 is a power house, fully souped up with 16 MB of Flash memory (for firmware and file storage) and 8 MB of QSPI-based external PSRAM so you can have massive storage buffers.",
+    "repo": "https://github.com/microsoft/devicescript-esp32",
+    "firmwareSource": "https://github.com/microsoft/devicescript-esp32/blob/main/boards/esp32s2/feather_s2.board.json",
+    "connector": "qwiic",
+    "link": "https://feathers2.io/",
+    "storeLink": ["https://unexpectedmaker.com/shop/feathers2-esp32-s2"],
+    "services": [
+      413852154, 342028028, 341864092, 471386691, 343122531, 400333340
+    ],
+    "productIdentifiers": [824637191],
+    "version": "2.0",
+    "status": "stable"
+  },
+  {
+    "id": "stmicroelectronics-bl475eiot01adevicescriptv00",
+    "name": "B-L475E-IOT01A DeviceScript",
+    "company": "STMicroelectronics",
+    "description": "B-L475E-IOT01A running Jacdac firmware accessing built-in sensors and DeviceScript. Built with AzureRTOS.",
+    "firmwareSource": "https://github.com/RLeclair/jacdac-azure-rtos/tree/master/STMicroelectronics/B-L475E-IOT01A",
+    "connector": "noConnector",
+    "link": "https://github.com/RLeclair/jacdac-azure-rtos/tree/master/STMicroelectronics/B-L475E-IOT01A",
+    "storeLink": ["https://www.st.com/en/evaluation-tools/b-l475e-iot01a.html"],
+    "services": [
+      337754823, 521405449, 505087730, 382210232, 504462570, 288680491
+    ],
+    "productIdentifiers": [954528034],
+    "version": "0.0",
+    "status": "stable"
+  },
+  {
+    "id": "sparkfun-gamerbitv00",
+    "name": "gamer:bit",
+    "company": "Sparkfun",
+    "description": "The SparkFun gamer:bit is a fun-filled \"carrier\" board for the micro:bit that, when combined with the micro:bit, provides you with a fully functional game system. Designed in a similar form factor to the classic Nintendo NES controller, the gamer:bit is equipped with a four-direction \"D-pad\" on the left side of the board and two action buttons on the right side of the board. The two push buttons on the micro:bit in the center function as start and select.",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "sparkfun-gamerbitv00",
+        "slug": "pelikhan/pxt-gamer-bit/tree/master/jacdac"
+      }
+    ],
+    "connector": "noConnector",
+    "link": "https://www.sparkfun.com/products/retired/14215",
+    "storeLink": ["https://www.sparkfun.com/products/retired/14215"],
+    "services": [277836886],
+    "productIdentifiers": [929407584],
+    "version": "0.0",
+    "status": "stable"
+  },
+  {
+    "id": "seeed-studio-grove16x2lcdv20",
+    "name": "Grove-16x2 LCD",
+    "company": "Seeed Studio",
+    "description": "Seeedstudio Grove - 16 x 2 LCD is a I2C LCD display. 16x2 means two lines and each line has 16 columns, 32 characters in total.",
+    "connector": "grove",
+    "link": "https://wiki.seeedstudio.com/Grove-16x2_LCD_Series/",
+    "storeLink": [
+      "https://www.seeedstudio.com/Grove-16-x-2-LCD-Black-on-Yellow.html"
+    ],
+    "services": [523748714],
+    "productIdentifiers": [877317536],
+    "version": "2.0",
+    "status": "stable"
+  },
+  {
+    "id": "seeed-studio-relayv12",
+    "name": "Relay",
+    "company": "Seeed Studio",
+    "description": "The Grove-Relay module is a digital normally-open switch. Through it, you can control circuit of high voltage with low voltage, 3.3-5V on the controller. There is an indicator LED on the board, which will light up when the controlled terminals get closed.",
+    "connector": "grove",
+    "link": "https://wiki.seeedstudio.com/Grove-Relay/",
+    "storeLink": ["https://www.seeedstudio.com/Grove-Relay.html"],
+    "services": [406840918],
+    "productIdentifiers": [808015809],
+    "version": "1.2",
+    "status": "stable"
+  },
+  {
+    "id": "seeed-studio-soilmoisturev14",
+    "name": "Soil Moisture",
+    "company": "Seeed Studio",
+    "description": "Soil Moisture Sensor can measure soil moisture for plants. The soil moisture sensor consists of two probes that allow the current to pass through the soil and then obtain resistance values to measure soil moisture content.",
+    "hardwareDesign": "https://wiki.seeedstudio.com/Grove-Moisture_Sensor/",
+    "connector": "grove",
+    "link": "https://www.seeedstudio.com/Grove-Moisture-Sensor.html",
+    "storeLink": ["https://www.seeedstudio.com/Grove-Moisture-Sensor.html"],
+    "services": [491430835],
+    "productIdentifiers": [814817380],
+    "version": "1.4",
+    "status": "stable"
+  },
+  {
+    "id": "seeed-studio-ultrasonicdistancesensorv20",
+    "name": "Ultrasonic Distance Sensor",
+    "company": "Seeed Studio",
+    "description": "This Grove - Ultrasonic ranger is a non-contact distance measurement module which works at 40KHz. When we provide a pulse trigger signal with more than 10uS through signal pin, the Grove_Ultrasonic_Ranger will issue 8 cycles of 40kHz cycle level and detect the echo. The pulse width of the echo signal is proportional to the measured distance.",
+    "connector": "grove",
+    "link": "https://www.seeedstudio.com/Grove-Ultrasonic-Distance-Sensor.html",
+    "storeLink": [
+      "https://www.seeedstudio.com/Grove-Ultrasonic-Distance-Sensor.html"
+    ],
+    "services": [337275786],
+    "productIdentifiers": [1068863164],
+    "version": "2.0",
+    "status": "stable"
+  },
+  {
+    "id": "seeed-studio-xiaoesp32c3v00",
+    "name": "XIAO ESP32C3",
+    "company": "Seeed Studio",
+    "description": "A tiny dev-board with ESP32-C3 from Seeed.",
+    "repo": "https://github.com/microsoft/devicescript-esp32",
+    "firmwareSource": "https://github.com/microsoft/devicescript-esp32/blob/main/boards/esp32c3/seeed_xiao_esp32c3.board.json",
+    "connector": "noConnector",
+    "storeLink": ["https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html"],
+    "services": [413852154, 342028028, 341864092, 343122531],
+    "productIdentifiers": [1056926545],
+    "version": "0.0",
+    "status": "stable"
+  },
+  {
+    "id": "roger-wagner-makerbitv10",
+    "name": "MakerBit",
+    "company": "Roger Wagner",
+    "description": "The MakerBit board provides simple and efficient connections to the features of the BBC micro:bit. Easily and quickly add lights and touch sensors to school projects, models and art installations. There are enough connecting wires and LEDs for one project. The MakerBit can control a maximum of 12 LEDs and 12 touch sensors in any one project.",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "roger-wagner-makerbitv10-motor",
+        "slug": "1010Technologies/pxt-makerbit-motor/jacdac"
+      },
+      {
+        "target": "microbit",
+        "name": "roger-wagner-makerbitv10-touch",
+        "slug": "1010Technologies/pxt-makerbit-touch/jacdac"
+      },
+      {
+        "target": "microbit",
+        "name": "roger-wagner-makerbitv10-lcd1602",
+        "slug": "1010Technologies/pxt-makerbit-lcd1602/jacdac"
+      }
+    ],
+    "connector": "grove",
+    "link": "https://makerbit.com/",
+    "storeLink": ["https://makerbit.com/"],
+    "services": [385895640, 343122531, 523748714],
+    "productIdentifiers": [1018020097],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "raspberry-pi-picov00",
+    "name": "Pico",
+    "company": "Raspberry Pi",
+    "description": "Raspberry Pi Pico is a low-cost, high-performance microcontroller board with flexible digital interfaces.",
+    "repo": "https://github.com/microsoft/devicescript-pico",
+    "firmwareSource": "https://github.com/microsoft/devicescript-pico/blob/main/boards/rp2040/pico.board.json",
+    "connector": "noConnector",
+    "link": "https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html",
+    "storeLink": ["https://www.raspberrypi.com/products/raspberry-pi-pico/"],
+    "productIdentifiers": [1064181516],
+    "version": "0.0",
+    "status": "stable"
+  },
+  {
+    "id": "raspberry-pi-picowv00",
+    "name": "Pico W",
+    "company": "Raspberry Pi",
+    "description": "Raspberry Pi Pico is a low-cost, high-performance microcontroller board with flexible digital interfaces. Raspberry Pi Pico W adds on-board single-band 2.4GHz wireless interfaces (802.11n) using the Infineon CYW43439 while retaining the Pico form factor. ",
+    "repo": "https://github.com/microsoft/devicescript-pico",
+    "firmwareSource": "https://github.com/microsoft/devicescript-pico/blob/main/boards/rp2040w/pico_w.board.json",
+    "connector": "noConnector",
+    "link": "https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html",
+    "storeLink": ["https://www.raspberrypi.com/products/raspberry-pi-pico/"],
+    "services": [
+      413852154, 342028028, 341864092, 471386691, 343122531, 400333340
+    ],
+    "productIdentifiers": [978399748],
+    "version": "0.0",
+    "status": "stable"
+  },
+  {
+    "id": "microbit-educational-foundation-microbitv2",
+    "name": "micro:bit V2",
+    "company": "microbit Educational Foundation",
+    "description": "The new micro:bit V2 has a built-in microphone and speaker to allow sound-sensing and sound-making without the need to attach another device. It also introduces capacitive touch sensing, a power-saving mode and more computing power for the classroom.",
+    "connector": "noConnector",
+    "link": "https://microsoft.github.io/jacdac-docs/clients/makecode/microbit-jukebox/",
+    "storeLink": ["https://www.microbit.org/buy/"],
+    "productIdentifiers": [854992189, 888455511, 1035770297, 1049819173],
+    "transport": {
+      "type": "usb",
+      "requestDescription": "BBC micro:bit CMSIS-DAP"
+    },
+    "firmwares": [
+      {
+        "name": "Micro:bit Jukebox",
+        "url": "https://github.com/microsoft/pxt-jacdac/releases/latest/download/microbit-jukebox.hex",
+        "productIdentifier": 888455511
+      },
+      {
+        "name": "Micro:bit MicroCode",
+        "url": "https://microsoft.github.io/microcode/assets/firmware.hex",
+        "productIdentifier": 1049819173
+      }
+    ],
+    "bootloader": {
+      "driveName": "MICROBIT",
+      "firmwareFormat": "hex"
+    },
+    "status": "stable",
+    "relatedDevices": ["kittenbot-jacdaptorformicrobitv2v10"]
+  },
+  {
+    "id": "maker-go-esp32c3superminiv10",
+    "name": "ESP32-C3 SuperMini",
+    "company": "Maker go",
+    "description": "A tiny ESP32-C3 development board.",
+    "connector": "noConnector",
+    "link": "https://usa.banggood.com/ESP32-C3-Development-Board-ESP32-SuperMini-WiFi-Bluetooth-Mini-Module-p-1997449.html",
+    "storeLink": [
+      "https://usa.banggood.com/ESP32-C3-Development-Board-ESP32-SuperMini-WiFi-Bluetooth-Mini-Module-p-1997449.html"
+    ],
+    "services": [288680491, 413852154],
+    "productIdentifiers": [1024631722],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "m5stack-cardputerv10",
+    "name": "Cardputer",
+    "company": "M5Stack",
+    "description": "Cardputer is a card-sized portable computer that is perfect for engineers. At the heart of Cardputer is the M5StampS3, a mini development board based on the ESP32-S3 chip. Cardputer features a powerful dual-core processor, supports Wi-Fi functionality and integrates various peripherals and sensors, making it ideal for rapid functional verification, industrial control and home automation systems.",
+    "repo": "https://github.com/m5stack/M5Cardputer-UserDemo",
+    "firmwareSource": "https://github.com/m5stack/M5Cardputer-UserDemo",
+    "connector": "grove",
+    "storeLink": [
+      "https://shop.m5stack.com/products/m5stack-cardputer-kit-w-m5stamps3"
+    ],
+    "productIdentifiers": [854823074],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "m-klein-callicolorv30",
+    "name": "Callicolor",
+    "company": "M.Klein",
+    "description": "Selfmade Neopixelring for Calliope mini.",
+    "connector": "noConnector",
+    "link": "https://www.hackster.io/MKlein/callicolor-01cc4b",
+    "storeLink": ["https://www.hackster.io/MKlein/callicolor-01cc4b"],
+    "services": [309264608],
+    "productIdentifiers": [1014868432],
+    "version": "3.0",
+    "status": "stable"
+  },
+  {
+    "id": "m-klein-calliogamerv10",
+    "name": "Calliogamer",
+    "company": "M.Klein",
+    "description": "The CallioGamer can easyly plugged under your calliope mini and provides eight gamepad buttons to control whatever you want.\nOnly a male 2x15 pin header and 8 tactile switches are needed to built your own CallioGamer!",
+    "firmwareSource": "https://github.com/MKleinSB/pxt-calliogamer-jacdac",
+    "connector": "noConnector",
+    "link": "https://www.hackster.io/MKlein/calliogamer-f57906",
+    "storeLink": ["https://www.hackster.io/MKlein/calliogamer-f57906"],
+    "services": [277836886],
+    "productIdentifiers": [992191103],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "kittenbot-accelerometerv10",
+    "name": "Accelerometer",
+    "company": "KittenBot",
+    "description": "Accelerometer sensors are devices used to measure acceleration or motion.",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [521405449],
+    "productIdentifiers": [1031216668],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "kittenbot-agilewhiskerkeyboardelite60v10",
+    "name": "AgileWhisker Keyboard Elite60",
+    "company": "KittenBot",
+    "description": "This is the first mechanical keyboard in the Jacdac system, featuring a 60% layout, a rotary encoder, RGB LED lighting, and two Jacdac interfaces. It is powered by the RP2040 microcontroller.",
+    "connector": "edgeHighCurrentProvider",
+    "link": "https://w.kittenbot.cc/",
+    "storeLink": ["https://w.kittenbot.cc/"],
+    "services": [309264608, 414210922, 437330261, 411425820, 284830153],
+    "productIdentifiers": [878230570],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "kittenbot-agilewhiskernumerickeypadv10",
+    "name": "AgileWhisker Numeric Keypad",
+    "company": "KittenBot",
+    "description": "This is the first numeric keypad in the Jacdac system, featuring an OLED screen, a rotary encoder, RGB LED lighting, and one Jacdac interface. It is powered by the RP2040 microcontroller.",
+    "connector": "edgeLowCurrentProviderConsumer",
+    "link": "https://w.kittenbot.cc/",
+    "storeLink": ["https://w.kittenbot.cc/"],
+    "services": [
+      309264608, 414210922, 437330261, 411425820, 284830153, 523748714
+    ],
+    "productIdentifiers": [988197346],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "kittenbot-awagentv10",
+    "name": "AW Agent",
+    "company": "KittenBot",
+    "description": "AW Agent, short for AgileWhisker Agent, is a small software for PC computers that is designed to be used in conjunction with AgileWhisker Keyboard Elite60 and other keyboards. It is an open-source software. It functions as a virtual hardware within the jacdac ecosystem. It incorporates MQTT services to retrieve hardware information from the computer and trigger computer events, among other functionalities.",
+    "connector": "noConnector",
+    "link": "https://w.kittenbot.cc/",
+    "storeLink": ["https://w.kittenbot.cc/"],
+    "services": [457422603, 289210942],
+    "productIdentifiers": [1020385313],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "kittenbot-duckybotkitv10",
+    "name": "DuckyBot Kit",
+    "company": "KittenBot",
+    "description": " Dive into the enchanting world of robotics with DuckyBot, a delightful cardboard robot shaped like a cheerful yellow duck. Engineered around the groundbreaking Jacdac Elite Module Suite, DuckyBot offers young learners a quirky and entertaining gateway into the vast realm of electronics and robotics, integrating seamlessly with Microbit and Makecode platforms.",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/duckybot-crafting-coding-and-quacking-with-robotics"
+    ],
+    "tags": ["kit", "microbit"],
+    "version": "1.0",
+    "status": "stable",
+    "devices": [
+      "kittenbot-powerv10",
+      "kittenbot-hapticoutputv10",
+      "kittenbot-accelerometerv10",
+      "kittenbot-relayv10",
+      "kittenbot-envsensorv10",
+      "kittenbot-rgbstripv10",
+      "kittenbot-servov10",
+      "kittenbot-ultrasonicsensorv10",
+      "kittenbot-hubv10",
+      "kittenbot-jacdaptorformicrobitv2v10",
+      "microbit-educational-foundation-microbitv2"
+    ],
+    "relatedDevices": ["microbit-educational-foundation-microbitv2"]
+  },
+  {
+    "id": "kittenbot-envsensorv10",
+    "name": "Env Sensor",
+    "company": "KittenBot",
+    "description": "Env Sensor is a device used to measure both the temperature and humidity of the surrounding environment.",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [337754823, 382210232],
+    "productIdentifiers": [998683858],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "kittenbot-grapebitv10",
+    "name": "Grape:bit",
+    "company": "KittenBot",
+    "description": "Grape:bit is a programming main control board mainly for the second to third grade information technology learning and institutional teaching. Its core is the ESP32, which has the characteristics of high performance, wireless communication, and graphical programming.",
+    "repo": "https://github.com/KittenBot/devicescript-esp32/tree/grapebit",
+    "firmwareSource": "https://github.com/KittenBot/devicescript-esp32/blob/grapebit/boards/esp32c3/kitten_grapebit_c3.board.json",
+    "connector": "edgeLowCurrentProviderConsumer",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/kittenbot-grapebit-20-pack"
+    ],
+    "services": [
+      288680491, 521405449, 343122531, 458731991, 282614377, 385895640
+    ],
+    "productIdentifiers": [952937357],
+    "transport": {
+      "type": "serial",
+      "vendorId": 4292
+    },
+    "firmwares": [
+      {
+        "name": "Grape:bit",
+        "url": "https://github.com/KittenBot/devicescript-esp32/releases/latest",
+        "productIdentifier": 952937357
+      }
+    ],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "kittenbot-hapticoutputv10",
+    "name": "Haptic Output",
+    "company": "KittenBot",
+    "description": "The Haptic Output module is essentially a vibration motor that can be used to provide haptic feedback in electronic devices.",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [406832290],
+    "productIdentifiers": [837852806],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "kittenbot-hubv10",
+    "name": "Hub",
+    "company": "KittenBot",
+    "description": "A passthrough cable hub.",
+    "connector": "edgePassive",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "tags": ["hub"],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "kittenbot-jacdacdeveloperstoolelectronicmodulekitbv10",
+    "name": "Jacdac Developer's-tool Electronic module Kit B",
+    "company": "KittenBot",
+    "description": "Dive deep into the forefront of electronic interfacing with the Jacdac Elite Module Suite. Built on the bedrock of Microsoft's avant-garde Jacdac protocol, this suite aggregates an array of meticulously crafted modules, setting the gold standard for next-gen electronic projects.\n\nIt Includes:\n\nJacdac-Power\tX1\nJacdac-Haptic Output\tX1\nJacdac-Accelerometer\tX1\nJacdac-Relay\tX1\nJacdac-Env Sensor\tX1\nJacdac-RGB Strip\tX1\nJacdac-Servo\tX1\nJacdac-Ultrasonic\tX1\nJacdac-Hub_B\tX1\nJacdac Cable  10 cm\tX2\nJacdac Cable 35 cm\tX2\nJacdac Cable  100 cm\tX1",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "tags": ["kit"],
+    "version": "1.0",
+    "status": "stable",
+    "devices": [
+      "kittenbot-powerv10",
+      "kittenbot-hapticoutputv10",
+      "kittenbot-accelerometerv10",
+      "kittenbot-relayv10",
+      "kittenbot-envsensorv10",
+      "kittenbot-rgbstripv10",
+      "kittenbot-servov10",
+      "kittenbot-ultrasonicsensorv10",
+      "kittenbot-hubv10"
+    ],
+    "relatedDevices": [
+      "kittenbot-jacdacstarterkitawithjacdaptorformicrobitv2v10",
+      "kittenbot-brainrp2040v10"
+    ]
+  },
+  {
+    "id": "kittenbot-jacdacstarterkitawithjacdaptorformicrobitv2v10",
+    "name": "Jacdac Starter Kit A with Jacdaptor for micro:bit V2",
+    "company": "KittenBot",
+    "description": "A kit of Jacdac modules.",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "tags": ["kit", "microbit"],
+    "version": "1.0",
+    "status": "stable",
+    "devices": [
+      "kittenbot-keycapbuttonv10",
+      "kittenbot-lightsensorv10",
+      "kittenbot-magnetsensorv10",
+      "kittenbot-rotarybuttonv10",
+      "kittenbot-sliderv10",
+      "kittenbot-rgbringv10",
+      "kittenbot-hubv10",
+      "kittenbot-jacdaptorformicrobitv2v10"
+    ],
+    "relatedDevices": [
+      "microbit-educational-foundation-microbitv2",
+      "kittenbot-jacdacdeveloperstoolelectronicmodulekitbv10",
+      "kittenbot-brainrp2040v10"
+    ],
+    "requiredDevices": ["microbit-educational-foundation-microbitv2"],
+    "order": 1
+  },
+  {
+    "id": "kittenbot-jacdaptorformicrobitv2v10",
+    "name": "Jacdaptor for micro:bit V2",
+    "company": "KittenBot",
+    "connector": "edgeLowCurrentProviderConsumer",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "tags": ["adapter", "microbit"],
+    "version": "1.0",
+    "status": "stable",
+    "relatedDevices": ["microbit-educational-foundation-microbitv2"],
+    "requiredDevices": ["microbit-educational-foundation-microbitv2"],
+    "shape": "ec30_1x7_r7"
+  },
+  {
+    "id": "kittenbot-keycapbuttonv10",
+    "name": "Keycap Button",
+    "company": "KittenBot",
+    "description": "A keycap keyboard button.",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "services": [343122531],
+    "productIdentifiers": [926152985],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_lr"
+  },
+  {
+    "id": "kittenbot-lightsensorv10",
+    "name": "Light Sensor",
+    "company": "KittenBot",
+    "description": "A light level sensor.",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "services": [400333340],
+    "productIdentifiers": [973683863, 1017391393],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "kittenbot-magnetsensorv10",
+    "name": "Magnet Sensor",
+    "company": "KittenBot",
+    "description": "A magnetic field sensor.",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "services": [318642191],
+    "productIdentifiers": [881631743, 1018441315],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "kittenbot-nanoscript2040v10",
+    "name": "NanoScript 2040",
+    "company": "KittenBot",
+    "description": "Elevate your embedded projects with our cutting-edge development board, powered by Raspberry Pi's RP2040 and tailored for DeviceScript. Experience the unmatched synergy of TypeScript in the realm of microcontroller programming, where precision, efficiency, and modern development practices converge.",
+    "connector": "edgeLowCurrentProviderConsumer",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/devicescript-enhanced-development-board-with-rp2040"
+    ],
+    "services": [411425820, 414210922, 524302175],
+    "productIdentifiers": [935525573],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_r"
+  },
+  {
+    "id": "kittenbot-newbitarcadeshieldexpansionboardformicrobitv2v10",
+    "name": "Newbit Arcade Shield Expansion Board for Micro:bit V2",
+    "company": "KittenBot",
+    "description": "KittenBot Newbit Arcade Shield is an expansion board developed exclusively for Micro:bit V2. It provides Micro:bit V2 the ability not only to be a console, but also to create programmable games. Equipped with the Newbit Arcade Shield, you can use Micro:bit to design games online in MakeCodeArcade, or play games offline, which will broaden your experience of programming with Micro:bit V2.",
+    "connector": "edgeLowCurrentProviderConsumer",
+    "storeLink": ["https://www.kittenbot.cc/products/newbit-arcade-shield"],
+    "productIdentifiers": [1042371620],
+    "tags": ["adapter", "microbit"],
+    "version": "1.0",
+    "status": "stable",
+    "relatedDevices": ["microbit-educational-foundation-microbitv2"],
+    "requiredDevices": ["microbit-educational-foundation-microbitv2"]
+  },
+  {
+    "id": "kittenbot-powerv10",
+    "name": "Power",
+    "company": "KittenBot",
+    "description": "Power module is used to supply high-current JACDAC modules such as servo modules.It can also be used to supply power to the entire JACDAC electronic system.It has overcurrent protection and a maximum output current of 1A.",
+    "connector": "edgeHighCurrentProvider",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [530893146],
+    "productIdentifiers": [1015787249],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x4_l2"
+  },
+  {
+    "id": "kittenbot-relayv10",
+    "name": "Relay",
+    "company": "KittenBot",
+    "description": "This relay module is designed for low voltage and low current applications. It's recommended to use a voltage of 5V and a current no greater than 1A.\nWhen using a relay module, it's important to be aware of electrical safety. It's recommended that you use the relay module under adult supervision, especially if you are not familiar with electrical circuits and how to use them safely.",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [406840918],
+    "productIdentifiers": [830413461],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x2_l"
+  },
+  {
+    "id": "kittenbot-rgbringv10",
+    "name": "RGB Ring",
+    "company": "KittenBot",
+    "description": "A ring of 8 colored programmable LEDs.",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "services": [369743088],
+    "productIdentifiers": [924243657],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x3_l"
+  },
+  {
+    "id": "kittenbot-rgbstripv10",
+    "name": "RGB Strip",
+    "company": "KittenBot",
+    "description": "RGB Strip module is used to drive WS2812 LED strips. If you're driving a large number of LEDs, such as more than 10, it's recommended to provide additional power to the LED strip to ensure stable and reliable operation.",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [309264608],
+    "productIdentifiers": [1033734884],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x2_l"
+  },
+  {
+    "id": "kittenbot-rotarybuttonv10",
+    "name": "Rotary Button",
+    "company": "KittenBot",
+    "description": "A rotary encoder and button.",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "services": [284830153, 343122531],
+    "productIdentifiers": [984959466],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_lr"
+  },
+  {
+    "id": "kittenbot-servov10",
+    "name": "Servo",
+    "company": "KittenBot",
+    "description": "Servo module is used to drive standard 3-wire analog servos. It has two output channels and can operate in two different current output modes: 500mA and 1A.",
+    "connector": "edgeLowCurrentProvider",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [318542083],
+    "productIdentifiers": [918447378],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x3_l"
+  },
+  {
+    "id": "kittenbot-sliderv10",
+    "name": "Slider",
+    "company": "KittenBot",
+    "description": "A slider.",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "services": [522667846],
+    "productIdentifiers": [1054684252],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_5x2_lr"
+  },
+  {
+    "id": "kittenbot-ultrasonicsensorv10",
+    "name": "Ultrasonic Sensor",
+    "company": "KittenBot",
+    "description": "The Ultrasonic Distance Measurement module has a detection range of approximately 3.5 meters.",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [337275786],
+    "productIdentifiers": [983895657],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_5x2_lr"
+  },
+  {
+    "id": "kitronik-accessbitv11",
+    "name": "ACCESS:bit",
+    "company": "Kitronik",
+    "description": "The ACCESS:bit is a bolt-on/clip-on board for the BBC microbit that simulates an access barrier.",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "kitronik-accessbitv11",
+        "slug": "pelikhan/pxt-kitronik-accessbit/jacdac"
+      }
+    ],
+    "connector": "noConnector",
+    "link": "https://kitronik.co.uk/products/5646-accessbit-for-bbc-microbit",
+    "storeLink": [
+      "https://kitronik.co.uk/products/5646-accessbit-for-bbc-microbit"
+    ],
+    "services": [318542083],
+    "productIdentifiers": [1053651806],
+    "version": "1.1",
+    "status": "stable"
+  },
+  {
+    "id": "kitronik-airqualityboardv10",
+    "name": "Air Quality Board",
+    "company": "Kitronik",
+    "description": "The Kitronik Air Quality Board provides a complete air monitoring and reporting solution for the BBC micro:bit . The wealth of onboard sensors and connection points allow you to collect extensive air quality data that can be stored in onboard memory and displayed on the OLED screen or transferred to a computer for analysis.",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "kitronik-airqualityboardv10",
+        "slug": "pelikhan/pxt-kitronik-air-quality/jacdac/"
+      }
+    ],
+    "connector": "edgeIndependent",
+    "link": "https://kitronik.co.uk/products/5674-kitronik-air-quality-board-for-bbc-micro-bit",
+    "storeLink": [
+      "https://kitronik.co.uk/products/5674-kitronik-air-quality-board-for-bbc-micro-bit"
+    ],
+    "services": [
+      337754823, 504462570, 382210232, 379362758, 445323816, 523748714
+    ],
+    "productIdentifiers": [854008423],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "kitronik-gamezip64v12",
+    "name": "Game Zip 64",
+    "company": "Kitronik",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "kitronik-gamezip64v12",
+        "slug": "pelikhan/pxt-kitronik-zip-64/jacdac"
+      }
+    ],
+    "connector": "noConnector",
+    "link": "https://kitronik.co.uk/products/5626-game-zip-64-for-the-bbc-microbit",
+    "storeLink": [
+      "https://kitronik.co.uk/products/5626-game-zip-64-for-the-bbc-microbit"
+    ],
+    "services": [277836886, 369743088, 406832290],
+    "productIdentifiers": [888103518],
+    "version": "1.2",
+    "status": "stable"
+  },
+  {
+    "id": "kitronik-servolitev10",
+    "name": "SERVO:LITE",
+    "company": "Kitronik",
+    "description": "The Servo:Lite board for the BBC micro:bit is a simple board that allows you to easily connect and control low power servo motors (servo's must be capable of operating at 3.3V) using the BBC micro:bit. It is connected to the micro:bit using five bolts. Connect two servos in standard configuration and it can drive up to 3 servos if the addressable 'ZIP' LEDs aren’t needed.",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "kitronik-servolitev10",
+        "slug": "pelikhan/pxt-kitronik-servo-lite/jacdac"
+      }
+    ],
+    "connector": "noConnector",
+    "link": "https://kitronik.co.uk/products/5623-servolite-board-for-move-mini",
+    "storeLink": [
+      "https://kitronik.co.uk/products/5623-servolite-board-for-move-mini"
+    ],
+    "services": [369743088, 318542083, 318542083],
+    "productIdentifiers": [995306847],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "kitronik-stopbitv10",
+    "name": "STOP:bit",
+    "company": "Kitronik",
+    "description": "The STOP:bit for the BBC micro:bit is the ultimate upgrade for traffic light/pedestrian crossing projects.",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "kitronik-stopbit-jacdac",
+        "slug": "pelikhan/pxt-kitronik-stopbit/jacdac"
+      }
+    ],
+    "connector": "noConnector",
+    "link": "https://kitronik.co.uk/products/5642-stopbit-traffic-light-for-bbc-microbit",
+    "storeLink": [
+      "https://kitronik.co.uk/products/5642-stopbit-traffic-light-for-bbc-microbit"
+    ],
+    "services": [365137307],
+    "productIdentifiers": [1058995861],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "keystudio-relaybreakoutboardv10",
+    "name": "Relay Breakout Board",
+    "company": "Keystudio",
+    "description": "Keyestudio relay breakout board for micro:bit has integrated a 4-way 5V relay module, fully compatible with micro:bit development board.\nIt can work only need to insert micro:bit into keyestudio relay shield, then input DC5V voltage on the relay VIN/GND port, pretty simple and convenient.",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "keystudio-relaybreakoutboardv10",
+        "slug": "pelikhan/keystudio-relay-breakout-jacdac"
+      }
+    ],
+    "connector": "noConnector",
+    "link": "https://www.keyestudio.com/products/keyestudio-relay-breakout-board-for-bbc-microbit",
+    "storeLink": [
+      "https://www.keyestudio.com/products/keyestudio-relay-breakout-board-for-bbc-microbit"
+    ],
+    "services": [406840918, 406840918, 406840918, 406840918],
+    "productIdentifiers": [901245225],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "icshop-gamebitexpansionboardv10",
+    "name": "Game:bit Expansion Board",
+    "company": "iCShop",
+    "description": "Game:Bit is a brand new product based on Microsoft Arcade games , providing users with different choices for learning micro:bit. Break away from the previous model of using expansion boards and sensors to create projects, and use the method of creating interesting games to stimulate learners' different programming thinking. From how to set the scoring method, character movements, background and music matching, to the judgment of victory and defeat and the ending process, everything in the entire game is decided by the game creator.",
+    "connector": "edgeLowCurrentProviderConsumer",
+    "storeLink": ["https://www.icshop.com.tw/products/368112100137?locale=en"],
+    "productIdentifiers": [860567421],
+    "tags": ["adapter", "microbit"],
+    "version": "1.0",
+    "status": "stable",
+    "relatedDevices": ["microbit-educational-foundation-microbitv2"],
+    "requiredDevices": ["microbit-educational-foundation-microbitv2"]
+  },
+  {
+    "id": "forward-education-breakoutboardrelaypumpv10",
+    "name": "Breakout Board + Relay + Pump",
+    "company": "Forward Education",
+    "description": "A micro:bit carrier board",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "forward-education-breakoutboardrelaypumpv10",
+        "slug": "climate-action-kits/pxt-fwd-edu/fwd-breakout"
+      }
+    ],
+    "link": "https://forwardedu.com",
+    "storeLink": ["https://forwardedu.com"],
+    "services": [406840918, 318542083],
+    "productIdentifiers": [873600795, 943529908],
+    "tags": ["adapter", "microbit"],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "forward-education-climateactionkitv10",
+    "name": "Climate Action Kit",
+    "company": "Forward Education",
+    "description": "Purpose-driven STEM education for a brighter future.  Explore climate action with our STEM kit and online lessons.",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "pxt-fwd-edu",
+        "slug": "climate-action-kits/pxt-fwd-edu/"
+      }
+    ],
+    "link": "https://forwardedu.com",
+    "storeLink": ["https://forwardedu.com"],
+    "tags": ["kit", "microbit"],
+    "version": "1.0",
+    "status": "stable",
+    "devices": [
+      "forward-education-linesensorv10",
+      "forward-education-breakoutboardrelaypumpv10",
+      "forward-education-ledlightsv10",
+      "forward-education-touchsensorv10",
+      "forward-education-dialbuttonv10",
+      "forward-education-sonarsensorv10",
+      "forward-education-solarsensorv10",
+      "forward-education-moisturesensorv10"
+    ],
+    "relatedDevices": ["microbit-educational-foundation-microbitv2"],
+    "requiredDevices": ["microbit-educational-foundation-microbitv2"]
+  },
+  {
+    "id": "forward-education-dialbuttonv10",
+    "name": "Dial Button",
+    "company": "Forward Education",
+    "description": "Dial Button is a rotary encoder and button compatible with the jacdac framework and part of the Climate Action Kit by Forward Education\n",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "forward-education-dialbuttonv10",
+        "slug": "climate-action-kits/pxt-fwd-edu/fwd-dial"
+      }
+    ],
+    "link": "https://forwardedu.com",
+    "storeLink": ["https://forwardedu.com"],
+    "services": [343122531, 284830153],
+    "productIdentifiers": [932148851],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "forward-education-ledlightsv10",
+    "name": "LED Lights",
+    "company": "Forward Education",
+    "description": "LED Lights is a ws2812 LED ring compatible with the jacdac framework and part of the Climate Action Kit by Forward Education\n",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "fwd-edu-led",
+        "slug": "climate-action-kits/pxt-fwd-edu/fwd-led"
+      }
+    ],
+    "link": "https://forwardedu.com",
+    "storeLink": ["https://forwardedu.com"],
+    "services": [369743088],
+    "productIdentifiers": [1054009247],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "forward-education-linesensorv10",
+    "name": "Line Sensor",
+    "company": "Forward Education",
+    "description": "Line Sensor is a multi-reflected light sensor compatible with the jacdac framework and part of the Climate Action Kit by Forward Education\n",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "fwd-edu-line",
+        "slug": "climate-action-kits/pxt-fwd-edu/fwd-line"
+      }
+    ],
+    "link": "https://forwardedu.com",
+    "storeLink": ["https://forwardedu.com"],
+    "services": [309087410, 309087410, 309087410],
+    "productIdentifiers": [1000568338],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "forward-education-moisturesensorv10",
+    "name": "Moisture Sensor",
+    "company": "Forward Education",
+    "description": "Moisture Sensor is a capacitive soil moisture sensor compatible with the jacdac framework and part of the Climate Action Kit by Forward Education\n",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "fwd-edu-moisture",
+        "slug": "climate-action-kits/pxt-fwd-edu/fwd-moisture"
+      }
+    ],
+    "link": "https://forwardedu.com",
+    "storeLink": ["https://forwardedu.com"],
+    "services": [491430835],
+    "productIdentifiers": [870361737],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "forward-education-solarsensorv10",
+    "name": "Solar Sensor",
+    "company": "Forward Education",
+    "description": "Solar Sensor is a photoresistor sensor compatible with the jacdac framework and part of the Climate Action Kit by Forward Education",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "fwd-edu-solar",
+        "slug": "climate-action-kits/pxt-fwd-edu/fwd-solar"
+      }
+    ],
+    "link": "https://forwardedu.com",
+    "storeLink": ["https://forwardedu.com"],
+    "services": [400333340],
+    "productIdentifiers": [1005257879],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "forward-education-sonarsensorv10",
+    "name": "Sonar Sensor",
+    "company": "Forward Education",
+    "description": "Sonar Sensor is an ultrasonic/radar sensor compatible with the jacdac framework and part of the Climate Action Kit by Forward Education\n",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "fwd-edu-sonar",
+        "slug": "climate-action-kits/pxt-fwd-edu/fwd-sonar"
+      }
+    ],
+    "link": "https://forwardedu.com",
+    "storeLink": ["https://forwardedu.com"],
+    "services": [337275786],
+    "productIdentifiers": [926591985],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "forward-education-touchsensorv10",
+    "name": "Touch Sensor",
+    "company": "Forward Education",
+    "description": "Touch Sensor is a capacitive touch sensor compatible with the jacdac framework and part of the Climate Action Kit by Forward Education\n",
+    "makeCodeRepo": [
+      {
+        "target": "microbit",
+        "name": "fwd-edu-touch",
+        "slug": "climate-action-kits/pxt-fwd-edu/fwd-touch"
+      }
+    ],
+    "link": "https://forwardedu.com",
+    "storeLink": ["https://forwardedu.com"],
+    "services": [343122531],
+    "productIdentifiers": [1064434129],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "espressif-esp32c3rustdevkitv12a",
+    "name": "ESP32-C3-RUST-DevKit",
+    "company": "Espressif",
+    "description": "This board is based on the ESP32-C3, and includes sensors, LEDs, buttons, a battery charger, and USB type-C connector.",
+    "repo": "https://github.com/microsoft/devicescript-esp32",
+    "firmwareSource": "https://github.com/microsoft/devicescript-esp32/blob/main/boards/esp32c3/esp32c3_rust_devkit.board.json",
+    "hardwareDesign": "https://github.com/esp-rs/esp-rust-board",
+    "connector": "noConnector",
+    "link": "https://github.com/esp-rs/esp-rust-board",
+    "storeLink": ["https://github.com/esp-rs/esp-rust-board"],
+    "services": [
+      413852154, 342028028, 341864092, 337754823, 382210232, 471386691,
+      343122531
+    ],
+    "productIdentifiers": [871537753],
+    "version": "1.2a",
+    "status": "stable"
+  },
+  {
+    "id": "espressif-esp32devkitcdevicescriptv40",
+    "name": "ESP32-DevKitC DeviceScript",
+    "company": "Espressif",
+    "description": "This will also work with NodeMCU etc.",
+    "firmwareSource": "https://github.com/microsoft/devicescript-esp32",
+    "connector": "noConnector",
+    "link": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html",
+    "storeLink": [
+      "https://www.espressif.com/en/products/devkits/esp32-devkitc"
+    ],
+    "services": [341864092, 342028028, 413852154, 288680491],
+    "productIdentifiers": [1011907077],
+    "transport": {
+      "type": "serial",
+      "vendorId": 4292
+    },
+    "firmwares": [
+      {
+        "name": "DeviceScript + Cloud Connector",
+        "url": "https://github.com/microsoft/devicescript-esp32/releases/latest",
+        "productIdentifier": 1011907077
+      }
+    ],
+    "version": "4.0",
+    "bootloader": {
+      "sequence": "boot-power",
+      "firmwareFormat": "bin",
+      "firmwareUploader": "https://adafruit.github.io/Adafruit_WebSerial_ESPTool/"
+    },
+    "status": "stable"
+  },
+  {
+    "id": "elecfreaks-jacdacbitv10",
+    "name": "Jacdac:bit",
+    "company": "ELECFREAKS",
+    "description": "Jacdac:bit is a micro:bit interface module for easy connection to Jacdac devices, ideal for learning and interactive projects.",
+    "connector": "edgeLowCurrentProviderConsumer",
+    "storeLink": ["https://shop.elecfreaks.com/products/Jacdacbit"],
+    "tags": ["adapter", "microbit"],
+    "version": "1.0",
+    "status": "stable",
+    "requiredDevices": ["microbit-educational-foundation-microbitv2"],
+    "shape": "ec30_1x7_r7"
+  },
+  {
+    "id": "elecfreaks-jacdacbuttonv10",
+    "name": "Jacdac Button",
+    "company": "ELECFREAKS",
+    "description": "A Jacdac Button.",
+    "storeLink": ["https://shop.elecfreaks.com/products/jacdacbutton"],
+    "services": [343122531],
+    "productIdentifiers": [968336045],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_lr"
+  },
+  {
+    "id": "elecfreaks-jacdacbuzzerv10",
+    "name": "Jacdac Buzzer",
+    "company": "ELECFREAKS",
+    "description": "A Jacdac Buzzer.",
+    "connector": "edgeLowCurrentProviderConsumer",
+    "storeLink": ["https://shop.elecfreaks.com/products/jacdacbuzzer"],
+    "services": [458731991],
+    "productIdentifiers": [870706665],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_lr"
+  },
+  {
+    "id": "elecfreaks-jacdachallsensorv10",
+    "name": "Jacdac Hall Sensor",
+    "company": "ELECFREAKS",
+    "description": "A Jacdac Hall Sensor.",
+    "storeLink": ["https://shop.elecfreaks.com/products/jacdachallsensor"],
+    "services": [318642191],
+    "productIdentifiers": [809663828],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_lr"
+  },
+  {
+    "id": "elecfreaks-jacdacledring8v10",
+    "name": "Jacdac LED Ring 8",
+    "company": "ELECFREAKS",
+    "description": "A Jacdac LED Ring 8.",
+    "storeLink": ["https://shop.elecfreaks.com/products/jacdacledring8"],
+    "services": [369743088],
+    "productIdentifiers": [930068017],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x3_l"
+  },
+  {
+    "id": "elecfreaks-jacdaclightsensorv10",
+    "name": "Jacdac Light Sensor",
+    "company": "ELECFREAKS",
+    "description": "A Jacdac Light Sensor.",
+    "storeLink": ["https://shop.elecfreaks.com/products/jacdaclightsensor"],
+    "services": [400333340],
+    "productIdentifiers": [933513617],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_lr"
+  },
+  {
+    "id": "elecfreaks-jacdacmoisturesensorv10",
+    "name": "Jacdac Moisture Sensor",
+    "company": "ELECFREAKS",
+    "description": "A Jacdac Motion Sensor.",
+    "storeLink": ["https://shop.elecfreaks.com/products/jacdacmoisturesensor"],
+    "services": [491430835],
+    "productIdentifiers": [976986401],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_lr"
+  },
+  {
+    "id": "elecfreaks-jacdacmotionsensorv10",
+    "name": "Jacdac Motion Sensor",
+    "company": "ELECFREAKS",
+    "description": "A Jacdac Motion Sensor.",
+    "storeLink": ["https://shop.elecfreaks.com/products/jacdacmotionsensor"],
+    "services": [293185353],
+    "productIdentifiers": [1066930108],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_lr"
+  },
+  {
+    "id": "elecfreaks-jacdacrotaryencoderv10",
+    "name": "Jacdac Rotary Encoder",
+    "company": "ELECFREAKS",
+    "description": "A Jacdac Rotary Encoder.",
+    "storeLink": ["https://shop.elecfreaks.com/products/jacdacrotaryencoder"],
+    "services": [284830153, 343122531],
+    "productIdentifiers": [805917517],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_lr"
+  },
+  {
+    "id": "elecfreaks-jacdacservov10",
+    "name": "Jacdac Servo",
+    "company": "ELECFREAKS",
+    "description": "A Jacdac Servo.",
+    "storeLink": ["https://shop.elecfreaks.com/products/jacdacservo"],
+    "services": [318542083],
+    "productIdentifiers": [943192226],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_lr"
+  },
+  {
+    "id": "elecfreaks-jacdactemprhsensorv10",
+    "name": "Jacdac TempRH Sensor",
+    "company": "ELECFREAKS",
+    "description": "A Jacdac TempRH Sensor.",
+    "storeLink": ["https://shop.elecfreaks.com/products/jacdactemprhsensor"],
+    "services": [337754823, 382210232],
+    "productIdentifiers": [927402146],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_lr"
+  },
+  {
+    "id": "elecfreaks-jacdacuvisensorv10",
+    "name": "Jacdac UVI Sensor",
+    "company": "ELECFREAKS",
+    "description": "A Jacdac UVI Sensor.",
+    "storeLink": ["https://shop.elecfreaks.com/products/jacdacuvisensor"],
+    "services": [527306128],
+    "productIdentifiers": [944940108],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_lr"
+  },
+  {
+    "id": "elecfreaks-microbitretroprogrammingarcadev10",
+    "name": "micro:bit Retro Programming Arcade",
+    "company": "ELECFREAKS",
+    "description": "micro:bit Retro Arcade is a color screen joystick expansion board for micro:bit V2, it contains a TFT 160*128 color screen, 4 directional buttons, two A/B buttons and a reset button. micro:bit Retro Arcade can be used with micro:bit V2 to program games online and play offline on the Microsoft Arcade programming platform. It is a simple and fun way to help children write their own games and understand the mystery behind them. It also supports custom game characters, diverse scenarios and plot design using graphical programming software, making it easy for everyone to achieve fun electronic creations and unlimited game ideas. micro:bit Retro Arcade can also be used as a remote control handle in addition to a game programming learning machine.",
+    "connector": "edgeLowCurrentProviderConsumer",
+    "storeLink": [
+      "https://shop.elecfreaks.com/products/micro-bit-retro-programming-arcade"
+    ],
+    "productIdentifiers": [814450363],
+    "tags": ["adapter", "microbit"],
+    "version": "1.0",
+    "status": "stable",
+    "relatedDevices": ["microbit-educational-foundation-microbitv2"],
+    "requiredDevices": ["microbit-educational-foundation-microbitv2"]
+  },
+  {
+    "id": "calliope-ggmbh-calliopeminiv3v30",
+    "name": "Calliope mini V3",
+    "company": "Calliope gGmbH",
+    "description": "Calliope mini is an easy-to-program microcontroller that has quite a few internal sensors and, in addition to a pin header and two Grove connectors it also features two JacDac connectors to connect sensors and actuators directly to the board.",
+    "connector": "edgeLowCurrentProvider",
+    "link": "https://calliope.cc",
+    "storeLink": ["https://shop.calliope.cc"],
+    "productIdentifiers": [860332754],
+    "transport": {
+      "type": "usb",
+      "requestDescription": "Calliope mini V3 CMSIS-DAP"
+    },
+    "version": "3.0",
+    "status": "stable"
+  },
+  {
+    "id": "calliope-ggmbh-calliopescd40v10",
+    "name": "Calliope SCD40",
+    "company": "Calliope gGmbH",
+    "description": "The SCD40 is a miniature CO2 sensor from Sensirion. This sensor builds on the photoacoustic NDIR sensing principle. It provides On-chip signal \ncompensation with the build-in humidity and temperature sensor.",
+    "connector": "grove",
+    "link": "https://shop.calliope.cc/en/products/scd40-calliope-mini-co2-sensor",
+    "storeLink": [
+      "https://shop.calliope.cc/en/products/scd40-calliope-mini-co2-sensor"
+    ],
+    "services": [379362758, 382210232, 337754823],
+    "productIdentifiers": [895527115],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "adafruit-qtpyesp32c3wifidevboardv10",
+    "name": "QT Py ESP32-C3 WiFi Dev Board",
+    "company": "Adafruit",
+    "description": "The ESP32-C3 integrates a rich set of peripherals, ranging from UART, I2C, I2S, remote control peripheral, LED PWM controller, general DMA controller, TWAI controller, USB Serial/JTAG controller, temperature sensor, and ADC. It also includes SPI, Dual SPI, and Quad SPI interfaces.",
+    "firmwareSource": "https://github.com/microsoft/devicescript-esp32",
+    "connector": "qwiic",
+    "link": "https://www.adafruit.com/product/5405",
+    "storeLink": ["https://www.adafruit.com/product/5405"],
+    "services": [341864092, 342028028, 413852154, 288680491],
+    "productIdentifiers": [866451573, 915657739],
+    "firmwares": [
+      {
+        "name": "DeviceScript + Cloud Connector",
+        "url": "https://github.com/microsoft/devicescript-esp32/releases/latest",
+        "productIdentifier": 915657739
+      }
+    ],
+    "version": "1.0",
+    "bootloader": {
+      "sequence": "boot-power",
+      "firmwareFormat": "bin",
+      "firmwareUploader": "https://adafruit.github.io/Adafruit_WebSerial_ESPTool/"
+    },
+    "status": "stable"
+  },
+  {
+    "id": "01space-esp32c3fh4rgbv10",
+    "name": "ESP32-C3FH4-RGB",
+    "company": "01Space",
+    "description": "Small ESP32-C3 board with 5x5 LED color matrix",
+    "connector": "noConnector",
+    "link": "https://github.com/01Space/ESP32-C3FH4-RGB",
+    "storeLink": [
+      "https://usa.banggood.com/ESP32-C3-Development-Board-RISC-V-WiFi-Bluetooth-IoT-Development-Board-Compatible-with-Python-p-1914005.html?imageAb=2&akmClientCountry=America&a=1694552315.7453&akmClientCountry=America&cur_warehouse=CN"
+    ],
+    "services": [288680491, 369743088, 343122531],
+    "productIdentifiers": [982550620],
+    "version": "1.0",
+    "status": "stable"
+  },
+  {
+    "id": "seeed-studio-xiaoesp32c3withmsr218base218v46",
+    "name": "XIAO ESP32C3 with MSR218 base",
+    "company": "Seeed Studio",
+    "description": "XIAO ESP32C3 + Prototype Carrier board for Xiao, Jacdac, Grove, Qwiic, Stemma QT, Analog.",
+    "repo": "https://github.com/microsoft/devicescript-esp32",
+    "firmwareSource": "https://github.com/microsoft/devicescript-esp32/blob/main/boards/esp32c3/seeed_xiao_esp32c3.board.json",
+    "connector": "edgeHighCurrentProvider",
+    "services": [282614377, 413852154, 342028028, 341864092, 471386691],
+    "productIdentifiers": [917915687],
+    "version": "4.6",
+    "designIdentifier": "218",
+    "shape": "ec30_4x3_l2"
+  },
+  {
+    "id": "milador-jmpressuresensorv10",
+    "name": "JM Pressure Sensor v1.0",
+    "company": "Milador",
+    "description": "JM Pressure Sensor v1.0",
+    "repo": "https://github.com/milador/jacdac-milador-modules",
+    "firmwareSource": "https://github.com/milador/jacdac-milador-modules",
+    "hardwareDesign": "https://github.com/milador/Jacdac-Pressure-Sensor/tree/develop/Hardware/PCB",
+    "link": "https://github.com/milador/Jacdac-Pressure-Sensor/",
+    "services": [504462570, 337754823],
+    "productIdentifiers": [962878031]
+  },
+  {
+    "id": "milador-pressuresensorv11",
+    "name": "Pressure Sensor",
+    "company": "Milador",
+    "description": "A Jacdac Pressure Sensor Module based on LPS33HW Absolute digital Pressure Sensor.",
+    "repo": "https://github.com/milador/jacdac-milador-modules",
+    "hardwareDesign": "https://github.com/milador/Jacdac-Pressure-Sensor/tree/develop/Hardware/PCB",
+    "link": "https://github.com/milador/Jacdac-Pressure-Sensor",
+    "services": [504462570, 337754823],
+    "productIdentifiers": [867414479],
+    "version": "1.1",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "microsoft-research-cableextender38v10",
+    "name": "CableExtender",
+    "company": "Microsoft Research",
+    "description": "Cable extender",
+    "connector": "edgePassive",
+    "productIdentifiers": [928595161],
+    "version": "1.0",
+    "designIdentifier": "38",
+    "status": "experimental"
+  },
+  {
+    "id": "microsoft-research-cableextender38v11",
+    "name": "CableExtender",
+    "company": "Microsoft Research",
+    "description": "Cable extender",
+    "hardwareDesign": "https://github.com/microsoft/jacdac-ddk/tree/main/electronics/altium/hub-designs/JacdacCableExtender%2038-1.1",
+    "connector": "edgePassive",
+    "productIdentifiers": [943041789],
+    "version": "1.1",
+    "designIdentifier": "38"
+  },
+  {
+    "id": "microsoft-research-co2209v43",
+    "name": "CO2",
+    "company": "Microsoft Research",
+    "description": "Measures real CO2 concentration using SCD40 sensor (plus temperature and humidity)",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [337754823, 382210232, 379362758],
+    "productIdentifiers": [1008301288],
+    "version": "4.3",
+    "designIdentifier": "209",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "microsoft-research-developerrgb117v10",
+    "name": "Developer RGB",
+    "company": "Microsoft Research",
+    "description": "Developer module with 10-pin header and RGB LED",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/developer-rgb-117/profile/developer-rgb-117-v1.0.c",
+    "hardwareDesign": "https://github.com/microsoft/jacdac-ddk/tree/main/electronics/altium/module-designs/JacdacDevRgbEc30%20117-1.0",
+    "services": [506480888],
+    "productIdentifiers": [851267569],
+    "version": "1.0",
+    "designIdentifier": "117",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "microsoft-research-devicescriptsimulatorv10",
+    "name": "DeviceScript Simulator",
+    "company": "Microsoft Research",
+    "description": "A virtual DeviceScript Manager simulator.",
+    "firmwareSource": "https://github.com/microsoft/devicescript",
+    "connector": "noConnector",
+    "services": [358308672],
+    "productIdentifiers": [1072018543, 288680491],
+    "version": "1.0"
+  },
+  {
+    "id": "microsoft-research-hub114v10",
+    "name": "Hub",
+    "company": "Microsoft Research",
+    "description": "Passive hub with 6 ports",
+    "hardwareDesign": "https://github.com/microsoft/jacdac-ddk/tree/main/electronics/altium/hub-designs/JacdacEc30Hub10x40%20114-1.0",
+    "connector": "edgePassive",
+    "version": "1.0",
+    "designIdentifier": "114",
+    "shape": "ec30_2x4_lr"
+  },
+  {
+    "id": "microsoft-research-jacdacjoystick440344v03",
+    "name": "JacdacJoystick 44-0.3",
+    "company": "Microsoft Research",
+    "firmwareSource": "https://github.com/microsoft/jacdac-padauk/tree/main/jm-joystick-44-0.2",
+    "link": "https://github.com/microsoft/jacdac-padauk",
+    "services": [277836886],
+    "productIdentifiers": [832285283],
+    "version": "0.3",
+    "designIdentifier": "44",
+    "status": "experimental"
+  },
+  {
+    "id": "microsoft-research-jacdacmicrobitshieldlp29v03",
+    "name": "JacDacMicroBitShieldLP",
+    "company": "Microsoft Research",
+    "connector": "edgeLowCurrentProvider",
+    "productIdentifiers": [1009620586],
+    "version": "0.3",
+    "designIdentifier": "29",
+    "status": "experimental"
+  },
+  {
+    "id": "microsoft-research-jacdacmotiondetection54v01",
+    "name": "JacdacMotionDetection ",
+    "company": "Microsoft Research",
+    "link": "https://github.com/microsoft/jacdac-padauk",
+    "services": [293185353],
+    "productIdentifiers": [1030407429],
+    "version": "0.1",
+    "designIdentifier": "54",
+    "status": "experimental"
+  },
+  {
+    "id": "microsoft-research-jacdacpinheaders45v02",
+    "name": "JacdacPinHeaders ",
+    "company": "Microsoft Research",
+    "productIdentifiers": [970939382],
+    "version": "0.2",
+    "designIdentifier": "45",
+    "status": "experimental"
+  },
+  {
+    "id": "microsoft-research-jacdactouchtest35v10",
+    "name": "JacdacTouchTest",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [677752265],
+    "productIdentifiers": [933677864],
+    "version": "1.0",
+    "designIdentifier": "35",
+    "status": "experimental"
+  },
+  {
+    "id": "microsoft-research-jacdactouchtestelectrode36v10",
+    "name": "JacdacTouchTestElectrode",
+    "company": "Microsoft Research",
+    "services": [677752265],
+    "productIdentifiers": [1026187559],
+    "version": "1.0",
+    "designIdentifier": "36",
+    "status": "experimental"
+  },
+  {
+    "id": "microsoft-research-jm3slider85v40",
+    "name": "JM-3-Slider",
+    "company": "Microsoft Research",
+    "description": "Triple slider",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v4.0/profile/slider-85.c",
+    "services": [522667846, 522667846, 522667846],
+    "productIdentifiers": [905702802],
+    "version": "4.0",
+    "designIdentifier": "85",
+    "shape": "ec30_6x3_lr"
+  },
+  {
+    "id": "microsoft-research-jmaccelerometer30v10",
+    "name": "JM Accelerometer",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-accelerometer-30-1.0/profile/accelerometer.c",
+    "services": [521405449],
+    "productIdentifiers": [952491663],
+    "version": "1.0",
+    "designIdentifier": "30"
+  },
+  {
+    "id": "microsoft-research-jmaccessswitchinput34v13",
+    "name": "JM Access Switch Input",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-access-switch-input-34-1.3/profile/xac.c",
+    "services": [343122531, 522667846, 277836886],
+    "productIdentifiers": [964964313],
+    "version": "1.3",
+    "designIdentifier": "34"
+  },
+  {
+    "id": "microsoft-research-jmaccessswitchoutputv11",
+    "name": "JM Access Switch Output",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-access-switch-output-1.1/profile/relay.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [406840918],
+    "productIdentifiers": [942325999],
+    "version": "1.1"
+  },
+  {
+    "id": "microsoft-research-jmambientlight55v01",
+    "name": "JM Ambient Light",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-padauk/tree/main/jm-ambient-lightsensor-55-0.1",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [400333340],
+    "productIdentifiers": [896864987],
+    "version": "0.1",
+    "designIdentifier": "55"
+  },
+  {
+    "id": "microsoft-research-jmanalogjoystick44v02",
+    "name": "JM Analog Joystick",
+    "company": "Microsoft Research",
+    "firmwareSource": "https://github.com/microsoft/jacdac-padauk/tree/main/jm-joystick-44-0.2",
+    "link": "https://github.com/microsoft/jacdac-padauk",
+    "services": [277836886],
+    "productIdentifiers": [976429228],
+    "version": "0.2",
+    "designIdentifier": "44"
+  },
+  {
+    "id": "microsoft-research-jmbase86v41",
+    "name": "JM Base",
+    "company": "Microsoft Research",
+    "description": "A breadboard like PCB to screw mount Jacdac modules.",
+    "connector": "edgePassive",
+    "tags": ["ec30", "hub"],
+    "version": "4.1",
+    "designIdentifier": "86"
+  },
+  {
+    "id": "microsoft-research-jmbrainesp3248v03",
+    "name": "JM Brain ESP32",
+    "company": "Microsoft Research",
+    "connector": "edgeHighCurrentProvider",
+    "services": [342028028, 341864092],
+    "productIdentifiers": [
+      917230668, 983264687, 1067560617, 1038170507, 816040071
+    ],
+    "transport": {
+      "type": "serial",
+      "vendorId": 12346
+    },
+    "firmwares": [
+      {
+        "name": "Azure IoT Hub Uploader",
+        "url": "https://github.com/microsoft/pxt-jacdac/releases/latest/download/uploader-esp32s2.uf2",
+        "productIdentifier": 1067560617
+      },
+      {
+        "name": "DeviceScript Brain + Azure IoT Hub Cloud Adapter",
+        "url": "https://github.com/microsoft/devicescript-esp32/releases/latest/download/devicescript-esp32s2.uf2",
+        "productIdentifier": 1038170507
+      },
+      {
+        "name": "Azure IoT Hub Cloud Adapter",
+        "url": "https://github.com/microsoft/devicescript-esp32/releases/latest/download/devicescript-esp32s2-nojacs.uf2",
+        "productIdentifier": 816040071
+      }
+    ],
+    "version": "0.3",
+    "designIdentifier": "48",
+    "bootloader": {
+      "sequence": "reset-boot",
+      "driveName": "IOT-BOOT",
+      "firmwareFormat": "uf2",
+      "ledAnimation": "blue-glow"
+    }
+  },
+  {
+    "id": "microsoft-research-jmbrainf441v02",
+    "name": "JM Brain F4",
+    "company": "Microsoft Research",
+    "connector": "edgeHighCurrentProvider",
+    "link": "https://github.com/microsoft/pxt-jacdac",
+    "services": [414210922, 411425820],
+    "productIdentifiers": [1003209864, 970267564, 819577746, 1009312972],
+    "transport": {
+      "type": "usb"
+    },
+    "firmwares": [
+      {
+        "name": "HID Keyboard + Mouse",
+        "url": "https://github.com/microsoft/pxt-jacdac/releases/latest/download/hid-servers-f4.uf2",
+        "productIdentifier": 819577746
+      },
+      {
+        "name": "HID Joystick",
+        "url": "https://github.com/microsoft/pxt-jacdac/releases/latest/download/hid-joystick-f4.uf2",
+        "productIdentifier": 1009312972
+      }
+    ],
+    "version": "0.2",
+    "designIdentifier": "41",
+    "bootloader": {
+      "sequence": "reset",
+      "driveName": "JACDACF4",
+      "firmwareFormat": "uf2",
+      "ledAnimation": "blue-glow"
+    }
+  },
+  {
+    "id": "microsoft-research-jmbrainrp204059v01",
+    "name": "JM Brain RP2040",
+    "company": "Microsoft Research",
+    "connector": "edgeHighCurrentProvider",
+    "link": "https://github.com/microsoft/pxt-jacdac",
+    "services": [414210922, 411425820],
+    "productIdentifiers": [884301483, 999933064, 883764657, 983850333],
+    "transport": {
+      "type": "usb"
+    },
+    "tags": ["adapter"],
+    "firmwares": [
+      {
+        "name": "HID Keyboard + Mouse",
+        "url": "https://github.com/microsoft/pxt-jacdac/releases/latest/download/hid-servers-rp2040.uf2",
+        "productIdentifier": 883764657
+      },
+      {
+        "name": "HID Joystick",
+        "url": "https://github.com/microsoft/pxt-jacdac/releases/latest/download/hid-joystick-rp2040.uf2",
+        "productIdentifier": 983850333
+      }
+    ],
+    "version": "0.1",
+    "designIdentifier": "59",
+    "bootloader": {
+      "sequence": "reset-boot",
+      "driveName": "RPI-RP2",
+      "firmwareFormat": "uf2"
+    }
+  },
+  {
+    "id": "microsoft-research-jmbutton10v13",
+    "name": "JM Button",
+    "company": "Microsoft Research",
+    "link": "https://github.com/microsoft/jacdac-padauk",
+    "services": [343122531],
+    "productIdentifiers": [896566497],
+    "version": "1.3",
+    "designIdentifier": "10"
+  },
+  {
+    "id": "microsoft-research-jmbutton40v02",
+    "name": "JM Button",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-button-40-0.2/profile/button.c",
+    "services": [343122531],
+    "productIdentifiers": [946173966],
+    "version": "0.2",
+    "designIdentifier": "40"
+  },
+  {
+    "id": "microsoft-research-jmbuttonterminal62v01",
+    "name": "JM Button Terminal",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [343122531],
+    "productIdentifiers": [1047530059],
+    "version": "0.1",
+    "designIdentifier": "62"
+  },
+  {
+    "id": "microsoft-research-jmbuzzer89",
+    "name": "JM-Buzzer",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v4.0/profile/buzzer-89.c",
+    "services": [458731991],
+    "productIdentifiers": [1073013851],
+    "designIdentifier": "89",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "microsoft-research-jmcapacitivesoilmoisturev33",
+    "name": "JM Capacitive Soil Moisture",
+    "company": "Microsoft Research",
+    "description": "JM Capacitive Soil Moisture v3.3",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v3.3/profile/soilmoisture.c",
+    "services": [491430835],
+    "productIdentifiers": [959462330],
+    "version": "3.3"
+  },
+  {
+    "id": "microsoft-research-jmclickairquality4v32",
+    "name": "JM-Click Airquality4",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v3.2/profile/airquality4click.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [379362758, 312849815],
+    "productIdentifiers": [878106432],
+    "version": "3.2"
+  },
+  {
+    "id": "microsoft-research-jmclickcolorv32",
+    "name": "JM-Click Color",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v3.2/profile/colorclick.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [372299111],
+    "productIdentifiers": [1020991645],
+    "version": "3.2"
+  },
+  {
+    "id": "microsoft-research-jmco2tvoctemphumsgp30sht3066v37",
+    "name": "JM CO2/TVOC/Temp/Hum SGP30+SHT30",
+    "company": "Microsoft Research",
+    "description": "JM CO2/TVOC/Temp/Hum SGP30+SHT30 66 v3.7",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v3.6/profile/co2.c",
+    "services": [379362758, 312849815, 337754823, 382210232],
+    "productIdentifiers": [912293656],
+    "version": "3.7",
+    "designIdentifier": "66"
+  },
+  {
+    "id": "microsoft-research-jmdualkey69v37",
+    "name": "JM Dual Key",
+    "company": "Microsoft Research",
+    "description": "JM 2Key 69 v3.7",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v3.6/profile/key2.c",
+    "services": [343122531, 343122531],
+    "productIdentifiers": [958599316],
+    "version": "3.7",
+    "designIdentifier": "69"
+  },
+  {
+    "id": "microsoft-research-jmenvironment204v42",
+    "name": "JM-Environment",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [337754823, 382210232, 379362758, 312849815],
+    "productIdentifiers": [842012177],
+    "version": "4.2",
+    "designIdentifier": "204",
+    "shape": "ec30_2x2_l"
+  },
+  {
+    "id": "microsoft-research-jmflexv10",
+    "name": "JM Flex",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-flex-sensor-1.0/profile/flex.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [524797638],
+    "productIdentifiers": [840841542],
+    "version": "1.0"
+  },
+  {
+    "id": "microsoft-research-jmgamepadv20",
+    "name": "JM GamePad",
+    "company": "Microsoft Research",
+    "description": "Lets you convert a plastic d-pad controller, so that it can be connected to a Jacdac network.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v2.0/profile/dpad.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [501915758],
+    "productIdentifiers": [919754666],
+    "version": "2.0"
+  },
+  {
+    "id": "microsoft-research-jmhallmagneticswitch81v40",
+    "name": "JM-Hall (magnetic switch)",
+    "company": "Microsoft Research",
+    "description": "JM-Hall (magnetic switch) 81 v4.0",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v4.0/profile/hall-81.c",
+    "services": [450008066],
+    "productIdentifiers": [920333141],
+    "version": "4.0",
+    "designIdentifier": "81",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "microsoft-research-jmhapticmach101v10",
+    "name": "JM Haptic MACH-1.0",
+    "company": "Microsoft Research",
+    "description": "JM Haptic MACH-1.0",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-haptic-1.0/profile/haptic.c",
+    "services": [406832290],
+    "productIdentifiers": [1022649261],
+    "version": "1.0",
+    "designIdentifier": "1"
+  },
+  {
+    "id": "microsoft-research-jmhub39v03",
+    "name": "JM Hub",
+    "company": "Microsoft Research",
+    "productIdentifiers": [917230668],
+    "version": "0.3",
+    "designIdentifier": "39",
+    "status": "experimental"
+  },
+  {
+    "id": "microsoft-research-jmjacscriptstarbrainv33",
+    "name": "JM Jacscript Star-Brain",
+    "company": "Microsoft Research",
+    "description": "A Jacscript brain",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/star-brain/profile/devicescript.c",
+    "services": [288680491],
+    "productIdentifiers": [1025500463],
+    "transport": {
+      "type": "serial",
+      "vendorId": 6790
+    },
+    "version": "3.3"
+  },
+  {
+    "id": "microsoft-research-jmkeyboardkey46v12",
+    "name": "JM Keyboard Key",
+    "company": "Microsoft Research",
+    "link": "https://github.com/microsoft/jacdac-padauk",
+    "services": [343122531],
+    "productIdentifiers": [876567534],
+    "version": "1.2",
+    "designIdentifier": "46"
+  },
+  {
+    "id": "microsoft-research-jmkeyv3768v37",
+    "name": "JM Key v3.7",
+    "company": "Microsoft Research",
+    "description": "JM Key 68 v3.7",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v3.6/profile/key.c",
+    "services": [343122531],
+    "productIdentifiers": [948311172],
+    "version": "3.7",
+    "designIdentifier": "68"
+  },
+  {
+    "id": "microsoft-research-jmmatrix87v40",
+    "name": "JM-Matrix",
+    "company": "Microsoft Research",
+    "description": "5x5 LED dot matrix",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v4.0matrix/profile/matrix-87.c",
+    "services": [286070091],
+    "productIdentifiers": [896568761],
+    "version": "4.0",
+    "designIdentifier": "87",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "microsoft-research-jmmicrobitshieldlp29v05",
+    "name": "JM MicroBit Shield LP",
+    "company": "Microsoft Research",
+    "hardwareDesign": "https://github.com/microsoft/jacdac-ddk/tree/main/electronics/deprecated_form_factor/altium_deprecated/reference-designs/JacdacMicroBitShieldLP%2029-0.6",
+    "connector": "edgeLowCurrentProvider",
+    "productIdentifiers": [974031363],
+    "tags": ["adapter", "microbit"],
+    "version": "0.5",
+    "designIdentifier": "29"
+  },
+  {
+    "id": "microsoft-research-jmmoduletester91v01",
+    "name": "JM Module Tester",
+    "company": "Microsoft Research",
+    "description": "A module that controls the Jacdac bus voltage and measures the bus current consumption.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-module-tester-91-0.1/board.h",
+    "services": [524302175, 420661422, 372485145, 406840918, 506480888],
+    "productIdentifiers": [1031963291],
+    "version": "0.1",
+    "designIdentifier": "91",
+    "shape": "ec30_5x2_lr"
+  },
+  {
+    "id": "microsoft-research-jmmotionpirv3874v38",
+    "name": "JM Motion PIR v3.8",
+    "company": "Microsoft Research",
+    "description": "JM Motion PIR 74 v3.8",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v3.3/profile/pir.c",
+    "link": "https://aka.ms/aaaaad",
+    "services": [293185353],
+    "productIdentifiers": [1060186023],
+    "version": "3.8",
+    "designIdentifier": "74",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "microsoft-research-jmpinheader45v02",
+    "name": "JM Pin Header",
+    "company": "Microsoft Research",
+    "description": "A regulated passive adapter from Jacdac to pin headers.",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "productIdentifiers": [994328823],
+    "version": "0.2",
+    "designIdentifier": "45"
+  },
+  {
+    "id": "microsoft-research-jmpressurev3872v38",
+    "name": "JM Pressure v3.8",
+    "company": "Microsoft Research",
+    "description": "JM Pressure MPL3115A2 72 v3.8",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v3.6/profile/barometer2.c",
+    "link": "https://aka.ms/aaaabb",
+    "services": [504462570, 337754823],
+    "productIdentifiers": [869351851],
+    "version": "3.8",
+    "designIdentifier": "72",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "microsoft-research-jmrelaymach01v10",
+    "name": "JM Relay MACH-0.1",
+    "company": "Microsoft Research",
+    "description": "JM Relay MACH-0.1",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-relay-1.0/profile/relay.c",
+    "services": [406840918],
+    "productIdentifiers": [900132124],
+    "version": "1.0"
+  },
+  {
+    "id": "microsoft-research-jmrgb883v40",
+    "name": "JM RGB-8",
+    "company": "Microsoft Research",
+    "description": "Circular 8 programmable LED display.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v4.0/profile/rgb-83.c",
+    "services": [369743088],
+    "productIdentifiers": [1050545633],
+    "version": "4.0",
+    "designIdentifier": "83",
+    "shape": "ec30_3x3_lr"
+  },
+  {
+    "id": "microsoft-research-jmrgbledbar58v01",
+    "name": "JM RGB LED Bar",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-rgb-led-bar-58-0.1/profile/npx.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [309264608],
+    "productIdentifiers": [1046525691],
+    "version": "0.1",
+    "designIdentifier": "58"
+  },
+  {
+    "id": "microsoft-research-jmrgbledgeneric60v01",
+    "name": "JM RGB LED Generic",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-rgb-led-generic-60-0.1/profile/npx.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [309264608],
+    "productIdentifiers": [967723905],
+    "version": "0.1",
+    "designIdentifier": "60"
+  },
+  {
+    "id": "microsoft-research-jmrgbledring37v21",
+    "name": "JM RGB LED Ring",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-rgb-led-ring-37-2.1/profile/npx.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [309264608],
+    "productIdentifiers": [807926135],
+    "version": "2.1",
+    "designIdentifier": "37"
+  },
+  {
+    "id": "microsoft-research-jmrgbring67v37",
+    "name": "JM RGB-Ring",
+    "company": "Microsoft Research",
+    "description": "JM RGB-Ring 67 v3.7",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [309264608],
+    "productIdentifiers": [946180442],
+    "version": "3.7",
+    "designIdentifier": "67"
+  },
+  {
+    "id": "microsoft-research-jmrotarybtn82v40",
+    "name": "JM Rotary + Btn",
+    "company": "Microsoft Research",
+    "description": "Rotary encoder with button in the standard shape.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v4.0rot/profile/rotary-82.c",
+    "services": [284830153, 343122531],
+    "productIdentifiers": [1045398971],
+    "version": "4.0",
+    "designIdentifier": "82",
+    "shape": "ec30_2x2_l"
+  },
+  {
+    "id": "microsoft-research-jmrotarycontrolbuttonv11",
+    "name": "JM Rotary Control + Button",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-rotary-control-26-1.1/profile/rotary_ctrl.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [284830153, 343122531],
+    "productIdentifiers": [829647613],
+    "version": "1.1"
+  },
+  {
+    "id": "microsoft-research-jmsht30temperaturehumidity64v36",
+    "name": "JM SHT30 Temperature/Humidity",
+    "company": "Microsoft Research",
+    "description": "JM SHT30 64 v3.6",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v3.6/profile/env30.c",
+    "services": [337754823, 382210232],
+    "productIdentifiers": [819953075],
+    "version": "3.6",
+    "designIdentifier": "64"
+  },
+  {
+    "id": "microsoft-research-jmsinglergbled42v01",
+    "name": "JM Single RGB LED",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [506480888],
+    "productIdentifiers": [917828732],
+    "version": "0.1",
+    "designIdentifier": "42"
+  },
+  {
+    "id": "microsoft-research-jmslider49v11",
+    "name": "JM Slider",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-slider-49-1.1/profile/slider.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [522667846],
+    "productIdentifiers": [966423091],
+    "version": "1.1",
+    "designIdentifier": "49"
+  },
+  {
+    "id": "microsoft-research-jmsoiltemperatureds18b20v33",
+    "name": "JM Soil Temperature DS18B20",
+    "company": "Microsoft Research",
+    "description": "JM Soil Temperature DS18B20 v3.3",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v3.3one/profile/soiltemp.c",
+    "services": [337754823],
+    "productIdentifiers": [1039295899],
+    "version": "3.3"
+  },
+  {
+    "id": "microsoft-research-jmspeechsynthesis61v33",
+    "name": "JM Speech Synthesis",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v3.3/profile/ttsclick.c",
+    "services": [302307733],
+    "productIdentifiers": [934541191],
+    "version": "3.3",
+    "designIdentifier": "61"
+  },
+  {
+    "id": "microsoft-research-jmspibridgev37",
+    "name": "JM SPI bridge",
+    "company": "Microsoft Research",
+    "description": "JM SPI bridge v3.7",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-spi-bridge-v3.7/profile/bridge.c",
+    "services": [535147631, 530893146],
+    "productIdentifiers": [882232420],
+    "tags": ["adapter", "pi"],
+    "version": "3.7"
+  },
+  {
+    "id": "microsoft-research-jmtemperaturehumidity18v11",
+    "name": "JM Temperature + Humidity",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-temp-humidity-18-1.1/profile/env3.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [337754823, 382210232],
+    "productIdentifiers": [827772887],
+    "version": "1.1",
+    "designIdentifier": "18"
+  },
+  {
+    "id": "microsoft-research-jmtemperaturehumidity202v41",
+    "name": "JM-Temperature/Humidity",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v4.0/profile/temphum-202.c",
+    "services": [337754823, 382210232],
+    "productIdentifiers": [891386792],
+    "version": "4.1",
+    "designIdentifier": "202",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "microsoft-research-jmthermocouplemax667573v3873v38",
+    "name": "JM Thermocouple MAX6675 73 v3.8",
+    "company": "Microsoft Research",
+    "description": "JM Thermocouple MAX6675 v3.8",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-c/blob/main/drivers/max6675.c",
+    "link": "https://aka.ms/aaaabc",
+    "services": [337754823],
+    "productIdentifiers": [1047456763],
+    "version": "3.8",
+    "designIdentifier": "73"
+  },
+  {
+    "id": "microsoft-research-jmuviilluminance65v3665v36",
+    "name": "JM UVI/Illuminance 65 v3.6",
+    "company": "Microsoft Research",
+    "description": "JM UVI/Illuminance 65 v3.6",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v3.6/profile/uv.c",
+    "services": [510577394, 527306128],
+    "productIdentifiers": [1021617002],
+    "version": "3.6",
+    "designIdentifier": "65"
+  },
+  {
+    "id": "microsoft-research-makeaccessible2021kitv10",
+    "name": "MakeAccessible 2021 Kit",
+    "company": "Microsoft Research",
+    "description": "A kit for the Microsoft MakeAccessible hackathon.",
+    "link": "https://www.microsoft.com/en-us/research/project/project-makeaccessible/",
+    "tags": ["kit"],
+    "version": "1.0",
+    "devices": [
+      "microbit-educational-foundation-microbitv2",
+      "microsoft-research-jmaccelerometer30v10",
+      "microsoft-research-jmaccessswitchinput34v13",
+      "microsoft-research-jmaccessswitchoutputv11",
+      "microsoft-research-jmambientlight55v01",
+      "microsoft-research-jmanalogjoystick44v02",
+      "microsoft-research-jmbrainf441v02",
+      "microsoft-research-jmbrainrp204059v01",
+      "microsoft-research-jmbutton10v13",
+      "microsoft-research-jmbutton40v02",
+      "microsoft-research-jmbuttonterminal62v01",
+      "microsoft-research-jmclickairquality4v32",
+      "microsoft-research-jmclickcolorv32",
+      "microsoft-research-jmflexv10",
+      "microsoft-research-jmkeyboardkey46v10",
+      "microsoft-research-jmkeyboardkey46v11",
+      "microsoft-research-jmrgbledbar58v01",
+      "microsoft-research-jmrgbledgeneric60v01",
+      "microsoft-research-jmrgbledring37v20",
+      "microsoft-research-jmrgbledring37v21",
+      "microsoft-research-jmrotarycontrolbuttonv10",
+      "microsoft-research-jmrotarycontrolbuttonv11",
+      "microsoft-research-jmsinglergbled42v01",
+      "microsoft-research-jmslider49v11",
+      "microsoft-research-jmtemperaturehumidity18v11"
+    ]
+  },
+  {
+    "id": "microsoft-research-mikrobuscarrierboard53v01",
+    "name": "MikrobusCarrierBoard",
+    "company": "Microsoft Research",
+    "productIdentifiers": [961789360],
+    "version": "0.1",
+    "designIdentifier": "53",
+    "status": "experimental"
+  },
+  {
+    "id": "microsoft-research-motionpir210v43",
+    "name": "Motion (PIR)",
+    "company": "Microsoft Research",
+    "description": "Detects motion using infra-red",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [293185353],
+    "productIdentifiers": [927235767],
+    "version": "4.3",
+    "designIdentifier": "210",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "microsoft-research-pressure211v43",
+    "name": "Pressure",
+    "company": "Microsoft Research",
+    "description": "Measures atmospheric pressure",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [337754823, 504462570],
+    "productIdentifiers": [816579443],
+    "version": "4.3",
+    "designIdentifier": "211",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "microsoft-research-rp2040devicescript59v01",
+    "name": "RP2040 DeviceScript",
+    "company": "Microsoft Research",
+    "description": "RP2040 brain running DeviceScript and related services",
+    "firmwareSource": "https://github.com/microsoft/devicescript-pico",
+    "connector": "edgeHighCurrentProvider",
+    "link": "https://github.com/microsoft/devicescript-pico",
+    "services": [530893146, 414210922, 411425820, 437330261],
+    "productIdentifiers": [900102307],
+    "transport": {
+      "type": "serial",
+      "vendorId": 11914
+    },
+    "version": "0.1",
+    "designIdentifier": "59"
+  },
+  {
+    "id": "microsoft-research-tact115v11",
+    "name": "Tact",
+    "company": "Microsoft Research",
+    "description": "Tact style push switch.",
+    "hardwareDesign": "https://github.com/microsoft/jacdac-ddk/tree/main/electronics/altium/module-designs/JacdacTactEc30%20115-1.1",
+    "services": [343122531],
+    "productIdentifiers": [1059364193],
+    "version": "1.1",
+    "designIdentifier": "115",
+    "shape": "ec30_1x2_l"
+  },
+  {
+    "id": "microsoft-research-temprh116v10",
+    "name": "Temp & RH",
+    "company": "Microsoft Research",
+    "description": "Temperature and relative humidity sensor module.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/temp-rh-116/profile/temp-rh-116-v1.0.c",
+    "hardwareDesign": "https://github.com/microsoft/jacdac-ddk/tree/main/electronics/altium/module-designs/JacdacTempRhEc30%20116-1.0",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [337754823, 382210232],
+    "productIdentifiers": [819808106],
+    "version": "1.0",
+    "designIdentifier": "116",
+    "shape": "ec30_2x2_l"
+  },
+  {
+    "id": "microsoft-research-temprh116v11",
+    "name": "Temp & RH",
+    "company": "Microsoft Research",
+    "description": "Temperature and relative humidity sensor module.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/temp-rh-116/profile/temp-rh-116-v1.1.c",
+    "hardwareDesign": "https://github.com/microsoft/jacdac-ddk/tree/main/electronics/altium/module-designs/JacdacTempRhEc30%20116-1.1",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [337754823, 382210232],
+    "productIdentifiers": [1066966718],
+    "version": "1.1",
+    "designIdentifier": "116",
+    "shape": "ec30_2x2_l"
+  },
+  {
+    "id": "microsoft-research-uviilluminance205v42",
+    "name": "UVI/Illuminance",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [510577394, 527306128],
+    "productIdentifiers": [928306999],
+    "version": "4.2",
+    "designIdentifier": "205",
+    "shape": "ec30_2x2_lr"
+  },
+  {
+    "id": "espressif-esp32s3devkitmv10",
+    "name": "ESP32-S3 DevKitM",
+    "company": "Espressif",
+    "description": "An ESP32-S3 dev-board with RGB LED and all pins",
+    "repo": "https://github.com/microsoft/devicescript-esp32",
+    "firmwareSource": "https://github.com/microsoft/devicescript-esp32/blob/main/boards/esp32s3/esp32s3_devkit_m.board.json",
+    "connector": "noConnector",
+    "link": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/hw-reference/esp32s3/user-guide-devkitm-1.html",
+    "services": [413852154, 342028028, 341864092],
+    "productIdentifiers": [896848503],
+    "version": "1.0"
+  },
+  {
+    "id": "microsoft-research-jmaccelerometer30v02",
+    "name": "JM Accelerometer",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [521405449],
+    "productIdentifiers": [872001670],
+    "version": "0.2",
+    "designIdentifier": "30",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmaccelerometerv20",
+    "name": "JM Accelerometer v2.0",
+    "company": "Microsoft Research",
+    "description": "A 3-axis accelerometer. 16G range.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v2.0i/profile/acc.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [521405449],
+    "productIdentifiers": [1020174761],
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmarcadebtnv20",
+    "name": "JM ArcadeBtn v2.0",
+    "company": "Microsoft Research",
+    "description": "Lets you connect a single arcade button with an LED.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v2.0/profile/btnled.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [343122531],
+    "productIdentifiers": [886919574],
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmarcadecontrolsv20",
+    "name": "JM Arcade Controls v2.0",
+    "company": "Microsoft Research",
+    "description": "Lets you connect arcade buttons and joystick to a Jacdac network.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v2.0/profile/arcade.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [501915758],
+    "productIdentifiers": [954450524],
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmbrainesp3248v02",
+    "name": "JM Brain ESP32",
+    "company": "Microsoft Research",
+    "connector": "edgeHighCurrentProvider",
+    "services": [342028028],
+    "productIdentifiers": [1067560617],
+    "transport": {
+      "type": "serial",
+      "vendorId": 12346
+    },
+    "firmwares": [
+      {
+        "name": "IoT Uploader",
+        "url": "https://github.com/microsoft/pxt-jacdac/releases/latest/download/uploader-esp32s2.uf2",
+        "productIdentifier": 1067560617
+      }
+    ],
+    "version": "0.2",
+    "designIdentifier": "48",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmbuzzerv20",
+    "name": "JM Buzzer v2.0",
+    "company": "Microsoft Research",
+    "description": "A simple buzzer.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v2.0/profile/snd.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [458731991],
+    "productIdentifiers": [854957595],
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmcrankbuttonv20",
+    "name": "JM Crank + Button",
+    "company": "Microsoft Research",
+    "description": "A rotary encoder with a push button.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v2.0/profile/crank-btn.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [284830153, 343122531],
+    "productIdentifiers": [813927310],
+    "version": "2.0",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmcrankv20",
+    "name": "JM Crank",
+    "company": "Microsoft Research",
+    "description": "A rotary encoder without a push button.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v2.0/profile/crank.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [284830153],
+    "productIdentifiers": [866678795],
+    "version": "2.0",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmkeyboardkey46v10",
+    "name": "JM Keyboard Key",
+    "company": "Microsoft Research",
+    "link": "https://github.com/microsoft/jacdac-padauk",
+    "services": [343122531],
+    "productIdentifiers": [1067229774],
+    "version": "1.0",
+    "designIdentifier": "46",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmkeyboardkey46v11",
+    "name": "JM Keyboard Key",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [343122531],
+    "productIdentifiers": [911541523],
+    "version": "1.1",
+    "designIdentifier": "46",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmmachinelearning",
+    "name": "JM Machine Learning",
+    "company": "Microsoft Research",
+    "description": "Lets you run machine learning models on data coming from Jacdac network.",
+    "repo": "https://github.com/microsoft/pxt-tensorflow",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [336566904, 496034245],
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmmotorv21",
+    "name": "JM Motor",
+    "company": "Microsoft Research",
+    "description": "Lets you control a single DC motor (up to 5V; yellow plastic ones work well).",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v2.1/profile/motor.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [385895640],
+    "productIdentifiers": [809626198],
+    "version": "2.1",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmpinheader45v01",
+    "name": "JM Pin Header",
+    "company": "Microsoft Research",
+    "description": "A unregulated passive adapter from Jacdac to pin headers.",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "productIdentifiers": [939230090],
+    "version": "0.1",
+    "designIdentifier": "45",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmpower",
+    "name": "JM Power",
+    "company": "Microsoft Research",
+    "description": "Lets you supply power to Jacdac network from a MicroUSB connection (eg. a USB battery pack).",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [530893146],
+    "productIdentifiers": [815885628],
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmprotov20",
+    "name": "JM Proto",
+    "company": "Microsoft Research",
+    "description": "A prototype multi-function board.\n* ``0x3f9bc26a`` JM Touch-Proto v2.0",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v2.0p/profile/proto.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "productIdentifiers": [1052138004],
+    "version": "2.0",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmpwmnpxv20",
+    "name": "JM PWM (npx)",
+    "company": "Microsoft Research",
+    "description": "A light-strip controller. Supports WS2812B, APA102, and SK9822.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [309264608],
+    "productIdentifiers": [895762065],
+    "version": "2.0",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmpwmnpxv21",
+    "name": "JM PWM (npx)",
+    "company": "Microsoft Research",
+    "description": "A light-strip controller with MicroUSB connector for power. Supports WS2812B, APA102, and SK9822.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [309264608],
+    "productIdentifiers": [1013705700],
+    "version": "2.1",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmpwmservov20",
+    "name": "JM PWM (Servo)",
+    "company": "Microsoft Research",
+    "description": "A controller for a 5V servo.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v2.0/profile/servo.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [318542083],
+    "productIdentifiers": [816890446],
+    "version": "2.0",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmpwmservov21",
+    "name": "JM PWM (Servo)",
+    "company": "Microsoft Research",
+    "description": "A controller for a 5V servo, with MicroUSB connector for power.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v2.1/profile/servo.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [318542083],
+    "productIdentifiers": [986140247],
+    "version": "2.1",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmrgbledring37v20",
+    "name": "JM RGB LED Ring",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-rgb-led-ring-37-2.0/profile/npx.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [309264608],
+    "productIdentifiers": [892295887],
+    "version": "2.0",
+    "designIdentifier": "37",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmrotarycontrolbuttonv10",
+    "name": "JM Rotary Control + Button",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-rotary-control-26-1.0/profile/rotary_ctrl.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [284830153, 343122531],
+    "productIdentifiers": [1060754715],
+    "version": "1.0",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmslider49v10",
+    "name": "JM Slider",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-slider-49-1.0/profile/slider.c#",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [522667846],
+    "productIdentifiers": [981005156],
+    "version": "1.0",
+    "designIdentifier": "49",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmsliderv20",
+    "name": "JM Slider",
+    "company": "Microsoft Research",
+    "description": "A linear potentiometer (slider).",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v2.0/profile/slider.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [522667846],
+    "productIdentifiers": [1043615261],
+    "version": "2.0",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmtemperaturehumidity18v10a",
+    "name": "JM Temperature + Humidity",
+    "company": "Microsoft Research",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-temp-humidity-18-1.0A/profile/env3.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [337754823, 382210232],
+    "productIdentifiers": [899442616],
+    "version": "1.0A",
+    "designIdentifier": "18",
+    "status": "deprecated"
+  },
+  {
+    "id": "microsoft-research-jmtouchprotov20",
+    "name": "JM Touch-Proto",
+    "company": "Microsoft Research",
+    "description": "A multi-touch sensor based on proto board.",
+    "repo": "https://github.com/microsoft/jacdac-msr-modules",
+    "firmwareSource": "https://github.com/microsoft/jacdac-msr-modules/blob/main/targets/jm-v2.0p/profile/multitouch.c",
+    "link": "https://github.com/microsoft/jacdac-msr-modules",
+    "services": [416636459],
+    "productIdentifiers": [1067172458],
+    "version": "2.0",
+    "status": "deprecated"
+  }
+]

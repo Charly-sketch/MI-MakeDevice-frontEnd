@@ -1,0 +1,2 @@
+export const ROTARY = 'rotary';
+

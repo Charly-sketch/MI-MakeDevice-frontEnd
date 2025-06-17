@@ -1,0 +1,87 @@
+export const buttonSTL = `solid Exported from Blender-2.92.0
+facet normal -1.000000 0.000000 0.000000
+outer loop
+vertex -0.009791 -0.010176 0.001600
+vertex -0.009791 -0.010176 0.016230
+vertex -0.009791 0.010232 0.016230
+endloop
+endfacet
+facet normal -1.000000 0.000000 0.000000
+outer loop
+vertex -0.009791 -0.010176 0.001600
+vertex -0.009791 0.010232 0.016230
+vertex -0.009791 0.010232 0.001600
+endloop
+endfacet
+facet normal 0.000000 1.000000 0.000000
+outer loop
+vertex -0.009791 0.010232 0.001600
+vertex -0.009791 0.010232 0.016230
+vertex 0.010154 0.010232 0.016230
+endloop
+endfacet
+facet normal 0.000000 1.000000 0.000000
+outer loop
+vertex -0.009791 0.010232 0.001600
+vertex 0.010154 0.010232 0.016230
+vertex 0.010154 0.010232 0.001600
+endloop
+endfacet
+facet normal 1.000000 0.000000 0.000000
+outer loop
+vertex 0.010154 0.010232 0.001600
+vertex 0.010154 0.010232 0.016230
+vertex 0.010154 -0.010176 0.016230
+endloop
+endfacet
+facet normal 1.000000 0.000000 0.000000
+outer loop
+vertex 0.010154 0.010232 0.001600
+vertex 0.010154 -0.010176 0.016230
+vertex 0.010154 -0.010176 0.001600
+endloop
+endfacet
+facet normal 0.000000 -1.000000 0.000000
+outer loop
+vertex 0.010154 -0.010176 0.001600
+vertex 0.010154 -0.010176 0.016230
+vertex -0.009791 -0.010176 0.016230
+endloop
+endfacet
+facet normal 0.000000 -1.000000 0.000000
+outer loop
+vertex 0.010154 -0.010176 0.001600
+vertex -0.009791 -0.010176 0.016230
+vertex -0.009791 -0.010176 0.001600
+endloop
+endfacet
+facet normal 0.000000 0.000000 -1.000000
+outer loop
+vertex -0.009791 0.010232 0.001600
+vertex 0.010154 0.010232 0.001600
+vertex 0.010154 -0.010176 0.001600
+endloop
+endfacet
+facet normal 0.000000 0.000000 -1.000000
+outer loop
+vertex -0.009791 0.010232 0.001600
+vertex 0.010154 -0.010176 0.001600
+vertex -0.009791 -0.010176 0.001600
+endloop
+endfacet
+facet normal 0.000000 0.000000 1.000000
+outer loop
+vertex 0.010154 0.010232 0.016230
+vertex -0.009791 0.010232 0.016230
+vertex -0.009791 -0.010176 0.016230
+endloop
+endfacet
+facet normal 0.000000 0.000000 1.000000
+outer loop
+vertex 0.010154 0.010232 0.016230
+vertex -0.009791 -0.010176 0.016230
+vertex 0.010154 -0.010176 0.016230
+endloop
+endfacet
+endsolid Exported from Blender-2.92.0
+`

@@ -1,0 +1,485 @@
+[
+  {
+    "id": "kittenbot-jacdaptorformicrobitv2v10",
+    "name": "Jacdaptor for micro:bit V2",
+    "company": "KittenBot",
+    "connector": "edgeLowCurrentProviderConsumer",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "tags": [
+      "adapter",
+      "microbit"
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "relatedDevices": [
+      "microbit-educational-foundation-microbitv2"
+    ],
+    "requiredDevices": [
+      "microbit-educational-foundation-microbitv2"
+    ],
+    "shape": "ec30_1x7_r6_mh_0.1",
+    "model_name": "ec30_1x7_r6_mh_0.1_jacdaptor"
+  },
+  {
+    "id": "kittenbot-keycapbuttonv10",
+    "name": "Keycap Button",
+    "company": "KittenBot",
+    "description": "A keycap keyboard button.",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "services": [
+      343122531
+    ],
+    "productIdentifiers": [
+      926152985
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_lr_mh_0.1",
+    "model_name": "ec30_3x2_lr_mh_0.1_keycap_button"
+  },
+  {
+    "id": "kittenbot-lightsensorv10",
+    "name": "Light Sensor",
+    "company": "KittenBot",
+    "description": "A light level sensor.",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "services": [
+      400333340
+    ],
+    "productIdentifiers": [
+      973683863,
+      1017391393
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x2_lr_mh_0.1",
+    "model_name": "ec30_2x2_lr_mh_0.1_light_sensor"
+  },
+  {
+    "id": "kittenbot-magnetsensorv10",
+    "name": "Magnet Sensor",
+    "company": "KittenBot",
+    "description": "A magnetic field sensor.",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "services": [
+      318642191
+    ],
+    "productIdentifiers": [
+      881631743,
+      1018441315
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x2_lr_mh_0.1"
+  },
+  {
+    "id": "kittenbot-rotarybuttonv10",
+    "name": "Rotary Button",
+    "company": "KittenBot",
+    "description": "A rotary encoder and button.",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "services": [
+      284830153,
+      343122531
+    ],
+    "productIdentifiers": [
+      984959466
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_lr_mh_0.1",
+    "model_name": "ec30_3x2_lr_mh_0.1_rotary_button"
+  },
+  {
+    "id": "kittenbot-sliderv10",
+    "name": "Slider",
+    "company": "KittenBot",
+    "description": "A slider.",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "services": [
+      522667846
+    ],
+    "productIdentifiers": [
+      1054684252
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_5x2_lr_mh_0.1"
+  },
+  {
+    "id": "kittenbot-ultrasonicsensorv10",
+    "name": "Ultrasonic Sensor",
+    "company": "KittenBot",
+    "description": "The Ultrasonic Distance Measurement module has a detection range of approximately 3.5 meters.",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [
+      337275786
+    ],
+    "productIdentifiers": [
+      983895657
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_5x2_lr_mh_0.1"
+  },
+  {
+    "id": "kittenbot-rgbringv10",
+    "name": "RGB Ring",
+    "company": "KittenBot",
+    "description": "A ring of 8 colored programmable LEDs.",
+    "storeLink": [
+      "https://www.amazon.com/KittenBot-Jacdac-Starter-Jacdaptor-Micro/dp/B0BQ6WMBPZ",
+      "https://www.kittenbot.cc/collections/frontpage/products/kittenbot-jacdac-kit-for-micro-bit",
+      "https://www.aliexpress.com/item/3256804237465484.html",
+      "https://www.pakronics.com.au/products/kittenbot-jacdac-kit-a-with-adaptor-for-micro-bit-v2-pakr-a0410"
+    ],
+    "services": [
+      369743088
+    ],
+    "productIdentifiers": [
+      924243657
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x3_l_mh_0.1",
+    "model_name": "ec30_3x3_l_mh_0.1_rgb_ring"
+  },
+  {
+    "id": "kittenbot-powerv10",
+    "name": "Power",
+    "company": "KittenBot",
+    "description": "Power module is used to supply high-current JACDAC modules such as servo modules.It can also be used to supply power to the entire JACDAC electronic system.It has overcurrent protection and a maximum output current of 1A.",
+    "connector": "edgeHighCurrentProvider",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [
+      530893146
+    ],
+    "productIdentifiers": [
+      1015787249
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x4_l2_mh_0.1"
+  },
+  {
+    "id": "kittenbot-hapticoutputv10",
+    "name": "Haptic Output",
+    "company": "KittenBot",
+    "description": "The Haptic Output module is essentially a vibration motor that can be used to provide haptic feedback in electronic devices.",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [
+      406832290
+    ],
+    "productIdentifiers": [
+      837852806
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x2_lr_mh_0.1"
+  },
+  {
+    "id": "kittenbot-accelerometerv10",
+    "name": "Accelerometer",
+    "company": "KittenBot",
+    "description": "Accelerometer sensors are devices used to measure acceleration or motion.",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [
+      521405449
+    ],
+    "productIdentifiers": [
+      1031216668
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x2_lr_mh_0.1"
+  },
+  {
+    "id": "kittenbot-relayv10",
+    "name": "Relay",
+    "company": "KittenBot",
+    "description": "This relay module is designed for low voltage and low current applications. It's recommended to use a voltage of 5V and a current no greater than 1A.\nWhen using a relay module, it's important to be aware of electrical safety. It's recommended that you use the relay module under adult supervision, especially if you are not familiar with electrical circuits and how to use them safely.",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [
+      406840918
+    ],
+    "productIdentifiers": [
+      830413461
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x2_l_mh_0.1"
+  },
+  {
+    "id": "kittenbot-envsensorv10",
+    "name": "Env Sensor",
+    "company": "KittenBot",
+    "description": "Env Sensor is a device used to measure both the temperature and humidity of the surrounding environment.",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [
+      337754823,
+      382210232
+    ],
+    "productIdentifiers": [
+      998683858
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x2_lr_mh_0.1"
+  },
+  {
+    "id": "kittenbot-rgbstripv10",
+    "name": "RGB Strip",
+    "company": "KittenBot",
+    "description": "RGB Strip module is used to drive WS2812 LED strips. If you're driving a large number of LEDs, such as more than 10, it's recommended to provide additional power to the LED strip to ensure stable and reliable operation.",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [
+      309264608
+    ],
+    "productIdentifiers": [
+      1033734884
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x2_l_mh_0.1"
+  },
+  {
+    "id": "kittenbot-servov10",
+    "name": "Servo",
+    "company": "KittenBot",
+    "description": "Servo module is used to drive standard 3-wire analog servos. It has two output channels and can operate in two different current output modes: 500mA and 1A.",
+    "connector": "edgeLowCurrentProvider",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/jacdac-kit-b-elite-module-suite-redefining-electronic-interfacing"
+    ],
+    "services": [
+      318542083
+    ],
+    "productIdentifiers": [
+      918447378
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_2x3_l_mh_0.1"
+  },
+  {
+    "id": "kittenbot-nanoscript2040v10",
+    "name": "NanoScript 2040",
+    "company": "KittenBot",
+    "description": "Elevate your embedded projects with our cutting-edge development board, powered by Raspberry Pi's RP2040 and tailored for DeviceScript. Experience the unmatched synergy of TypeScript in the realm of microcontroller programming, where precision, efficiency, and modern development practices converge.",
+    "connector": "edgeLowCurrentProviderConsumer",
+    "storeLink": [
+      "https://www.kittenbot.cc/products/devicescript-enhanced-development-board-with-rp2040"
+    ],
+    "services": [
+      411425820,
+      414210922,
+      524302175
+    ],
+    "productIdentifiers": [
+      935525573
+    ],
+    "version": "1.0",
+    "status": "stable",
+    "shape": "ec30_3x2_r_mh_0.1"
+  },
+  {
+    "id": "jacdac_data_mh_0.1",
+    "name": "Jacdac Data mounting hole ",
+    "company": "Jacdac",
+    "description": "Jacdac Data mounting holes",
+    "connector": null,
+    "services": null,
+    "storeLink": null,
+    "productIdentifiers": null,
+    "version": "1.0",
+    "status": "stable",
+    "shape": "jacdac_data_mh_0.1"
+  },
+  {
+    "id": "jacdac_ground_mh_0.1",
+    "name": "Jacdac Ground mounting hole ",
+    "company": "Jacdac",
+    "description": "Jacdac Ground mounting holes",
+    "connector": null,
+    "services": null,
+    "storeLink": null,
+    "productIdentifiers": null,
+    "version": "1.0",
+    "status": "stable",
+    "shape": "jacdac_ground_mh_0.1"
+  },
+  {
+    "id": "jacdac_power_mh_0.1",
+    "name": "Jacdac Power mounting hole ",
+    "company": "Jacdac",
+    "description": "Jacdac Power mounting holes",
+    "connector": null,
+    "services": null,
+    "storeLink": null,
+    "productIdentifiers": null,
+    "version": "1.0",
+    "status": "stable",
+    "shape": "jacdac_power_mh_0.1"
+  },
+  {
+    "id": "vm_rp2040_pogo_mh_0.1",
+    "name": "RP2040 Brain with GPIO Pogo Pins",
+    "company": "MakeDevice",
+    "description": "Jacdac RP2040 brain module with pogo pins for GPIO",
+    "connector": null,
+    "services": null,
+    "storeLink": null,
+    "productIdentifiers": null,
+    "version": "1.0",
+    "status": "stable",
+    "shape": "vm_rp2040_pogo_mh_0.1"
+  },
+  {
+    "id": "vm_rgb_ring_0.3",
+    "name": "Virtual RGB Ring",
+    "company": "MakeDevice",
+    "description": "Jacdac RGB LED Ring virtual module",
+    "connector": null,
+    "services": null,
+    "storeLink": null,
+    "productIdentifiers": null,
+    "version": "1.0",
+    "status": "stable",
+    "shape": "vm_rgb_ring_0.3"
+  },
+  {
+    "id": "vm_rgb_led_0.3",
+    "name": "Virtual Single RGB LED",
+    "company": "MakeDevice",
+    "description": "Jacdac Single RGB virtual module",
+    "connector": null,
+    "services": null,
+    "storeLink": null,
+    "productIdentifiers": null,
+    "version": "1.0",
+    "status": "stable",
+    "shape": "vm_rgb_led_0.3"
+  },
+  {
+    "id": "vm_rp2040_brain_0.1",
+    "name": "Virtual RP2040 Brain",
+    "company": "MakeDevice",
+    "description": "Jacdac RP2040 brain virtual module",
+    "connector": null,
+    "services": null,
+    "storeLink": null,
+    "productIdentifiers": null,
+    "version": "1.0",
+    "status": "stable",
+    "shape": "vm_rp2040_brain_0.1"
+  },
+  {
+    "id": "vm_rotary_button_0.3",
+    "name": "Virtual Rotary Encoder",
+    "company": "MakeDevice",
+    "description": "Jacdac rotary encoder with push button virtual module",
+    "connector": null,
+    "services": null,
+    "storeLink": null,
+    "productIdentifiers": null,
+    "version": "1.0",
+    "status": "stable",
+    "shape": "vm_rotary_button_0.3"
+  },
+  {
+    "id": "vm_light_sensor_0.3",
+    "name": "Virtual Light Sensor",
+    "company": "MakeDevice",
+    "description": "Jacdac light sensor virtual module",
+    "connector": null,
+    "services": null,
+    "storeLink": null,
+    "productIdentifiers": null,
+    "version": "1.0",
+    "status": "stable",
+    "shape": "vm_light_sensor_0.3"
+  },
+  {
+    "id": "vm_jacdaptor_0.2",
+    "name": "Virtual Jacdaptor",
+    "company": "MakeDevice",
+    "description": "Jacdac micro:bit adaptor virtual module",
+    "connector": null,
+    "services": null,
+    "storeLink": null,
+    "productIdentifiers": null,
+    "version": "1.0",
+    "status": "stable",
+    "shape": "vm_jacdaptor_0.2"
+  },
+  {
+    "id": "vm_keycap_button_0.3",
+    "name": "Virtual Keycap Button",
+    "company": "MakeDevice",
+    "description": "Jacdac keycap button virtual module",
+    "connector": null,
+    "services": null,
+    "storeLink": null,
+    "productIdentifiers": null,
+    "version": "1.0",
+    "status": "stable",
+    "shape": "vm_keycap_button_0.3"
+  },
+  {
+    "id": "vm_keycap_button_row_0.3",
+    "name": "Virtual Keycap Button Row",
+    "company": "MakeDevice",
+    "description": "Jacdac keycap button row virtual module",
+    "connector": null,
+    "services": null,
+    "storeLink": null,
+    "productIdentifiers": null,
+    "version": "1.0",
+    "status": "stable",
+    "shape": "vm_keycap_button_row_0.3"
+  }
+]

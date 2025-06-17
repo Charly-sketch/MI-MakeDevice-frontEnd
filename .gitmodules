@@ -1,0 +1,3 @@
+[submodule "MakeDevice-backend"]
+	path = MakeDevice-backend
+	url = https://github.com/mac-aron/MakeDevice-backend

@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,7.0.10*%
+%TF.CreationDate,2024-06-25T16:53:40+01:00*%
+%TF.ProjectId,REPLICATE_glue_potentiometer,5245504c-4943-4415-9445-5f676c75655f,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 7.0.10) date 2024-06-25 16:53:40*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.100000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X16850001Y-28525001D02*
+X44650001Y-28525001D01*
+X44650001Y-42025001D01*
+X16850001Y-42025001D01*
+X16850001Y-28525001D01*
+M02*

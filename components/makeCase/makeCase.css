@@ -1,0 +1,196 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  height: 98vh;
+  width: 98vw;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+/* === Canvas à gauche === */
+.main-Canvas {
+  flex: 1;
+  background-color: #a5a5a5;
+  border-right: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* === Panneau de boutons à droite === */
+.buttons-container {
+  width: 400px;
+  padding: 20px;
+  background-color: #2f2f2f;
+  overflow-y: auto;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+/* === Boutons généraux === */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.button-style {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 5px 0;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
+
+.button-blue {
+  background-color: #007bff;
+  color: white;
+}
+
+.button-green {
+  background-color: #28a745;
+  color: white;
+}
+
+.button-red {
+  background-color: #dc3545;
+  color: white;
+  margin-top: 10px;
+}
+
+.button-edit {
+  background-color: #ffc107;
+  color: black;
+  margin-left: 10px;
+}
+
+.button-select-all {
+  margin-top: 10px;
+  background-color: #6c757d;
+  color: white;
+}
+
+/* === Inputs === */
+.select-style,
+.input-file,
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.checkbox-style {
+  margin-right: 6px;
+}
+
+/* === Paramètres personnalisés === */
+.case-params {
+  margin-top: 20px;
+}
+
+/* === Barre de progression === */
+.progress-bar-container-outer {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  z-index: 100;
+}
+ 
+.progress-bar-container {
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+  position: relative;
+}
+.progress-bar {
+  background-color: #007bff;
+  height: 100%;
+}
+
+.progress-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  top: 2px;
+  color: black;
+}
+
+/* === Styles pour les options personnalisées === */
+.custom-options-container {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.level-options {
+  display: inline-block;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.custom-options-container label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.case-params {
+  margin-top: 10px;
+}
+
+.case-params > div {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.case-params label {
+  flex: 1;
+  text-transform: capitalize;
+}
+
+.case-params input {
+  width: 80px;
+}
+
+.param-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.param-row label {
+  text-transform: capitalize;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.param-row input {
+  width: 80px;
+}
