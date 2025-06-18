@@ -7,7 +7,7 @@ import * as THREE from "three";
 
 import { makeCase } from './components/utils_makeCase';
 import { Scene } from './components/scene';
-import { handleJsonUpload } from './components/utils_json';
+import { handleJsonUpload, buildFromJson} from './components/utils_json';
 import {
   stlUpload,
   stlToggle,
@@ -19,6 +19,7 @@ import {
   stlAddNew,
   stlDeleteSelected
 } from './components/utils_stl';
+import { Settings } from "@mui/icons-material";
 
 
 const MakeCase = (props: { isHidden: boolean }) => {
@@ -27,7 +28,7 @@ const MakeCase = (props: { isHidden: boolean }) => {
   const [models, setModels] = useState([]);
   const [selectedModelIndex, setSelectedModelIndex] = useState(null);
   const [selectedStlIndex, setSelectedStlIndex] = useState(null);
-
+  
   // Consts ?
   const pcbThick = 2;
   const mountingDepth = 4;
@@ -89,6 +90,18 @@ const MakeCase = (props: { isHidden: boolean }) => {
     });
   };
 
+  // check if there's a cookie with fabricationSettings
+  useEffect(() => {
+    const match = document.cookie.match(/(?:^|;\s*)fabricationSettings=([^;]*)/);
+    console.log("Checking for fabricationSettings cookie...");
+    if (match) {
+      console.log("Found fabricationSettings cookie:", match[1]);
+      buildFromJson(match[1], setJsonData, setLevels, setModels, levelGap, setProgress, setCaseMesh, setLidMesh);
+    } else {
+      console.log("No fabricationSettings cookie found.");
+    }
+  }, [levelGap]);
+  
   // I am not good at making UIs. :(
   return (
     <div hidden={isHidden}>

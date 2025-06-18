@@ -179,6 +179,10 @@ const FabricationFilesModal: React.FC<FabricationFilesModalProps> = ({
         rotation: 0,
       });
     }
+
+    // Save settings JSON to cookies
+    document.cookie = `fabricationSettings=${encodeURIComponent(JSON.stringify(settings))}; path=/; max-age=31536000`;
+
     sendFabricationData(settings)
       .then(async (response) => {
         if (response.success === true) {
