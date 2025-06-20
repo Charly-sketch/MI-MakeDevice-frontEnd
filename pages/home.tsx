@@ -216,7 +216,7 @@ const Home: NextPage = () => {
   const [editorScene, setEditorScene] = useState(null);
 
   // generate fabrication settings cookie for makeCase
-  let initialSettings = undefined;
+  let initialSettings = settings;
   generateFabricationSettingsCookie({
     initialSettings,
     editorScene,
