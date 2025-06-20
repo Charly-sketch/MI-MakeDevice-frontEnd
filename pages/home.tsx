@@ -66,13 +66,14 @@ Globals.assign({
   frameLoop: "always",
 });
 
-import { raf } from '@react-spring/rafz'
-raf.frameLoop = 'demand'
+import { raf } from "@react-spring/rafz";
+raf.frameLoop = "demand";
 
+import { generateFabricationSettingsCookie } from "../components/makeCase/DataJsonCreation";
 
 //const DynamicHomePage: NextPage = dynamic(() => import(Home));
 const Home: NextPage = () => {
-  useEffect(() => { }, []);
+  useEffect(() => {}, []);
 
   const [sceneState, setSceneState] = useState();
 
@@ -214,6 +215,13 @@ const Home: NextPage = () => {
   // stores current state of threejs scen
   const [editorScene, setEditorScene] = useState(null);
 
+  // generate fabrication settings cookie for makeCase
+  let initialSettings = undefined;
+  generateFabricationSettingsCookie({
+    initialSettings,
+    editorScene,
+  });
+
   // module or object selected or 'lastClicked' by the user
   const [lastClicked, setLastClicked] = useState(undefined);
 
@@ -325,6 +333,7 @@ const Home: NextPage = () => {
       //console.log("svgArr: ", svgArr);
     }
   };
+
   const handleRenderClick = () => {
     const tempMH = collectMountingHoleLocations(editorScene);
     const mountingHoleLocations = tempMH
@@ -387,7 +396,11 @@ const Home: NextPage = () => {
                     xs={viewable === 1 ? 10 : 5}
                     hidden={!(viewable === 1 || viewable === 2)}
                   >
-                    <Box component={"div"} maxHeight={"88vh"} alignItems="center">
+                    <Box
+                      component={"div"}
+                      maxHeight={"88vh"}
+                      alignItems="center"
+                    >
                       <Grid
                         container
                         spacing={1}
@@ -432,12 +445,16 @@ const Home: NextPage = () => {
                                 // eslint-disable-next-line react/jsx-no-duplicate-props
                                 addModule={addModule}
                                 carrierPCBDimensions={carrierPCBDimensions}
-                                setCarrierPCBDimensions={setCarrierPCBDimensions}
+                                setCarrierPCBDimensions={
+                                  setCarrierPCBDimensions
+                                }
                                 enclosureDimensions={enclosureDimensions}
                                 setEnclosureDimensions={setEnclosureDimensions}
                                 enclosureVisible={enclosureVisible}
                                 setEnclosureVisible={setEnclosureVisible}
-                                setEnclosureOptionsOpen={setEnclosureOptionsOpen}
+                                setEnclosureOptionsOpen={
+                                  setEnclosureOptionsOpen
+                                }
                                 setCarrierPCBOptionsOpen={
                                   setCarrierPCBOptionsOpen
                                 }
@@ -473,15 +490,15 @@ const Home: NextPage = () => {
                           style={
                             viewable === 1
                               ? {
-                                position: "relative",
-                                overflow: "hidden",
-                                height: "66vh",
-                              }
+                                  position: "relative",
+                                  overflow: "hidden",
+                                  height: "66vh",
+                                }
                               : {
-                                position: "relative",
-                                height: "50%",
-                                width: "100%",
-                              }
+                                  position: "relative",
+                                  height: "50%",
+                                  width: "100%",
+                                }
                           }
                         >
                           <Box component={"div"} height={"100%"} width={"100%"}>
@@ -489,7 +506,9 @@ const Home: NextPage = () => {
                               <EnclosureOptions
                                 enclosureDimensions={enclosureDimensions}
                                 enclosureOptionsOpen={enclosureOptionsOpen}
-                                setEnclosureOptionsOpen={setEnclosureOptionsOpen}
+                                setEnclosureOptionsOpen={
+                                  setEnclosureOptionsOpen
+                                }
                                 scene={editorScene}
                               ></EnclosureOptions>
                             )}
@@ -576,7 +595,9 @@ const Home: NextPage = () => {
                                   (Math.PI / 2) * 4,
                                 ]}
                                 position={[0, 6.8, 0]}
-                                jdMountingHoleLocations={jdMountingHoleLocations}
+                                jdMountingHoleLocations={
+                                  jdMountingHoleLocations
+                                }
                               />
 
                               {objects}
@@ -588,7 +609,7 @@ const Home: NextPage = () => {
                                 near={-1000}
                                 far={10000}
                                 up={[1, 0, 0]}
-                            /* rotateZ={THREE.MathUtils.degToRad(-90)} */
+                                /* rotateZ={THREE.MathUtils.degToRad(-90)} */
                               />
 
                               <OrbitControls
