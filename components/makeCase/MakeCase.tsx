@@ -117,7 +117,7 @@ const MakeCase = (props: { isHidden: boolean }) => {
   // Crée une plaque par défaut selon les dimensions de la case
   useEffect(() => {
     if (caseParams.x > 0 && caseParams.y > 0) {
-      const geometry = new THREE.BoxGeometry(caseParams.x, caseParams.y, 2); // 5mm d'épaisseur
+      const geometry = new THREE.BoxGeometry(caseParams.x, caseParams.y, 3); // 5mm d'épaisseur
       const material = new THREE.MeshStandardMaterial({
         color: "#416F5C",
         transparent: true,
