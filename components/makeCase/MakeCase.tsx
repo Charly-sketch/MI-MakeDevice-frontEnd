@@ -27,6 +27,7 @@ const MakeCase = (props: { isHidden: boolean }) => {
   const [models, setModels] = useState([]);
   const [selectedModelIndex, setSelectedModelIndex] = useState(null);
   const [selectedStlIndex, setSelectedStlIndex] = useState(null);
+  const [defaultPlateMesh, setDefaultPlateMesh] = useState(null);
 
   // Consts ?
   const pcbThick = 2;
@@ -112,6 +113,31 @@ const MakeCase = (props: { isHidden: boolean }) => {
       console.log("No fabricationSettings cookie found.");
     }
   }, [levelGap]);
+
+  // Crée une plaque par défaut selon les dimensions de la case
+  useEffect(() => {
+    if (caseParams.x > 0 && caseParams.y > 0) {
+      const geometry = new THREE.BoxGeometry(caseParams.x, caseParams.y, 2); // 5mm d'épaisseur
+      const material = new THREE.MeshStandardMaterial({
+        color: "#416F5C",
+        transparent: true,
+      });
+      const mesh = new THREE.Mesh(geometry, material);
+      mesh.position.z = -0.5; // Pour que la plaque soit sous la case
+
+      // Ajoute la wireframe avec des traits plus larges
+      const wireframe = new THREE.WireframeGeometry(geometry);
+      // Note: linewidth > 1 fonctionne seulement sur certains environnements (WebGL1, pas WebGL2)
+      const lineMaterial = new THREE.LineBasicMaterial({
+        color: 0xffffff,
+        linewidth: 4,
+      });
+      const frameLine = new THREE.LineSegments(wireframe, lineMaterial);
+      mesh.add(frameLine);
+
+      setDefaultPlateMesh(mesh);
+    }
+  }, [caseParams.x, caseParams.y]);
 
   // I am not good at making UIs. :(
   return (
@@ -411,8 +437,13 @@ const MakeCase = (props: { isHidden: boolean }) => {
         </div>
 
         <div className="main-Canvas">
-          {models.length > 0 && (
-            <Scene models={models} caseMesh={caseMesh} lidMesh={lidMesh} />
+          {(models.length > 0 || defaultPlateMesh) && (
+            <Scene
+              models={models}
+              caseMesh={caseMesh}
+              lidMesh={lidMesh}
+              defaultPlateMesh={defaultPlateMesh}
+            />
           )}
         </div>
 

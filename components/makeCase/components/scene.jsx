@@ -1,23 +1,21 @@
-import {memo} from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-import { ModuleModel } from './moduleModel';
+import { memo } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { ModuleModel } from "./moduleModel";
 
 /**
  * Main 3D canvas scene.
  * Adds all models, the orbit camera, and the generated case mesh.
  */
-export const Scene = memo(({
-  models,
-  caseMesh,
-  lidMesh,
-}) => {
+export const Scene = memo(({ models, caseMesh, lidMesh, defaultPlateMesh }) => {
   return (
-    <Canvas 
-      camera={{ position: [0, 0, 200], fov: 50 }} 
-      style={{ background: 'white' }}>
+    <Canvas
+      camera={{ position: [0, 0, 200], fov: 50 }}
+      style={{ background: "white" }}
+    >
+      <ambientLight />
 
-      <ambientLight/>
+      {defaultPlateMesh && <primitive object={defaultPlateMesh} />}
 
       {models.map((mod, idx) => (
         <ModuleModel
@@ -30,10 +28,9 @@ export const Scene = memo(({
         />
       ))}
 
-      
       {caseMesh && <primitive object={caseMesh} />}
       {lidMesh && <primitive object={lidMesh} />}
-      <OrbitControls/>
+      <OrbitControls />
     </Canvas>
   );
 });

@@ -272,7 +272,7 @@ export const makeCase = async (
   console.log("Split case into lid and base in : " + elapsedTime);
 
   caseCSG.material = new THREE.MeshStandardMaterial({
-    color: "green", //"#ccccFF",
+    color: "yellow", //"#ccccFF",
     transparent: true,
     opacity: 0.6,
   });
