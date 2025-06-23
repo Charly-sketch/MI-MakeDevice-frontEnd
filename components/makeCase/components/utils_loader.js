@@ -9,9 +9,34 @@ const MODEL_PATHS = [
 
 // Common suffixes for STL files associated with a module
 const FILE_ENDINGS = [
-  "_mount_back", "_mount_front", "_req", "_fun", "_microbit_slot", "_1", "_2", "_3", "_4", "_5", "_6",
-  "_mesh_1", "_mesh_2", "_mesh_3", "_mesh_4", "_mesh_5", "_mesh_6", "_mesh_7", "_mesh_8", "_mesh_9", "_mesh_10", "_mesh_11", "_mesh_12", "_mesh_13", "_mesh_14", "_mesh_15", "_mesh_16", "_mesh_17", "_mesh_18",
-];
+  "_req",
+  "_fun",
+  "_microbit_slot",
+  "_1",
+  "_2",
+  "_3",
+  "_4",
+  "_5",
+  "_6",
+  "_mesh_1",
+  "_mesh_2",
+  "_mesh_3",
+  "_mesh_4",
+  "_mesh_5",
+  "_mesh_6",
+  "_mesh_7",
+  "_mesh_8",
+  "_mesh_9",
+  "_mesh_10",
+  "_mesh_11",
+  "_mesh_12",
+  "_mesh_13",
+  "_mesh_14",
+  "_mesh_15",
+  "_mesh_16",
+  "_mesh_17",
+  "_mesh_18",
+]; //"_mount_back", "_mount_front",
 
 /**
  * Loads models from a list of module model_names from JSON config.
@@ -49,7 +74,7 @@ export const loadModelsFromJson = async (modules, levelGap = 0, onProgress) => {
               };
             }
             return null;
-          })
+          }),
         );
         const stlUrls = [];
         const stlGeometries = [];
@@ -80,7 +105,10 @@ export const loadModelsFromJson = async (modules, levelGap = 0, onProgress) => {
         });
         break; // Stop searching other MODEL_PATHS for this module
       } catch (err) {
-        console.warn(`Error loading model for ${mod.model_name} at ${path}`, err);
+        console.warn(
+          `Error loading model for ${mod.model_name} at ${path}`,
+          err,
+        );
       }
     }
   }
@@ -98,7 +126,7 @@ const tryLoadSTL = (url) => {
       (geometry) => resolve(geometry),
       // Ignore errors if happen, they should be caught in parent.
       undefined,
-      () => resolve(null)
+      () => resolve(null),
     );
   });
 };
