@@ -40,7 +40,7 @@ export const makeCase = async (
         sizeX + xExtraThickness,
         sizeY + yExtraThickness,
         Height + zExtraThickness,
-        1,
+        caseParams.roundnessDetail,//caseParams.roundnessDetails,
         caseParams.roundness
     );
 
@@ -132,7 +132,6 @@ export const makeCase = async (
     }
 
     // Batch CSG union and subtract
-    
     const batchSize = caseParams.batchSize || 7; // Variable to control batch size
     totalSteps = Math.ceil(mountMeshes.length / batchSize) + Math.ceil(subtractMeshes.length / batchSize); // Recalculate total steps after batching for 50% to 100%
     doneSteps = 0;
@@ -179,6 +178,7 @@ export const makeCase = async (
     // }
 
     // Helper function
+    
     function updateProgress(phase = 1) {
         doneSteps++;
         let percent = (doneSteps / totalSteps) * 49;
@@ -224,10 +224,12 @@ export const makeCase = async (
     horizontalSplit.updateMatrix();
 
     // Lid steal
-    let lidInner = new THREE.BoxGeometry(
+    let lidInner = new RoundedBoxGeometry(
         sizeX + xExtraThickness / 2 - 0.1,
         sizeY + yExtraThickness / 2 - 0.1,
-        outerSplitZ - innerSplitZ + 0.5
+        outerSplitZ - innerSplitZ + 0.5,
+        1,
+        0,//caseParams.roundness
     );
     let lidInnerMesh = new THREE.Mesh(lidInner);
     lidInnerMesh.position.z = (outerSplitZ - innerSplitZ) / 2 + innerSplitZ;
@@ -235,10 +237,12 @@ export const makeCase = async (
     lidInnerMesh.position.x = caseCSG.position.x;
     lidInnerMesh.updateMatrix();
 
-    let lidTop = new THREE.BoxGeometry(
+    let lidTop = new RoundedBoxGeometry(
         sizeX + xExtraThickness + 0.1,
         sizeY + yExtraThickness + 0.1,
-        Height + zExtraThickness - outerSplitZ + 0.2
+        Height + zExtraThickness - outerSplitZ + 0.2,
+        1,
+        0 //caseParams.roundness
     );
     let lidTopMesh = new THREE.Mesh(lidTop);
     lidTopMesh.position.z =
@@ -255,16 +259,16 @@ export const makeCase = async (
     console.log("Split case into lid and base in : " + elapsedTime);
 
     caseCSG.material = new THREE.MeshStandardMaterial({
-        color: "#ccccFF",
+        color: "green", //"#ccccFF",
         transparent: true,
-        opacity: 0.9,
+        opacity: 0.6,
     });
     setLidMesh(lidCSG);
 
     lidCSG.material = new THREE.MeshStandardMaterial({
-        color: "#ccFFcc",
+        color: "blue", //"#ccFFcc",
         transparent: true,
-        opacity: 0.5,
+        opacity: 0.6,
     });
     setCaseMesh(caseCSG);
 
