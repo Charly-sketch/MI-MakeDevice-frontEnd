@@ -7,30 +7,32 @@ import { ModuleModel } from "./moduleModel";
  * Main 3D canvas scene.
  * Adds all models, the orbit camera, and the generated case mesh.
  */
-export const Scene = memo(({ models, caseMesh, lidMesh, defaultPlateMesh }) => {
-  return (
-    <Canvas
-      camera={{ position: [0, 0, 200], fov: 50 }}
-      style={{ background: "white" }}
-    >
-      <ambientLight />
+export const Scene = memo(
+  ({ models, caseMesh, lidMesh, mountingPlateMesh }) => {
+    return (
+      <Canvas
+        camera={{ position: [0, 0, 200], fov: 50 }}
+        style={{ background: "white" }}
+      >
+        <ambientLight />
 
-      {defaultPlateMesh && <primitive object={defaultPlateMesh} />}
+        {mountingPlateMesh && <primitive object={mountingPlateMesh} />}
 
-      {models.map((mod, idx) => (
-        <ModuleModel
-          key={idx}
-          glbUrl={mod.glbUrl}
-          stlUrls={mod.stlUrls}
-          loadedStls={mod._loadedStls}
-          position={mod.position}
-          rotation={mod.rotation}
-        />
-      ))}
+        {models.map((mod, idx) => (
+          <ModuleModel
+            key={idx}
+            glbUrl={mod.glbUrl}
+            stlUrls={mod.stlUrls}
+            loadedStls={mod._loadedStls}
+            position={mod.position}
+            rotation={mod.rotation}
+          />
+        ))}
 
-      {caseMesh && <primitive object={caseMesh} />}
-      {lidMesh && <primitive object={lidMesh} />}
-      <OrbitControls />
-    </Canvas>
-  );
-});
+        {caseMesh && <primitive object={caseMesh} />}
+        {lidMesh && <primitive object={lidMesh} />}
+        <OrbitControls />
+      </Canvas>
+    );
+  },
+);

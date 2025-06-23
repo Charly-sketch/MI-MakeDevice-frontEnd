@@ -27,7 +27,7 @@ const MakeCase = (props: { isHidden: boolean }) => {
   const [models, setModels] = useState([]);
   const [selectedModelIndex, setSelectedModelIndex] = useState(null);
   const [selectedStlIndex, setSelectedStlIndex] = useState(null);
-  const [defaultPlateMesh, setDefaultPlateMesh] = useState(null);
+  const [mountingPlateMesh, setMountingPlateMesh] = useState(null);
 
   // Consts ?
   const pcbThick = 2;
@@ -114,28 +114,24 @@ const MakeCase = (props: { isHidden: boolean }) => {
     }
   }, [levelGap]);
 
-  // Crée une plaque par défaut selon les dimensions de la case
+  // create the mounting board
   useEffect(() => {
     if (caseParams.x > 0 && caseParams.y > 0) {
-      const geometry = new THREE.BoxGeometry(caseParams.x, caseParams.y, 3); // 5mm d'épaisseur
+      const geometry = new THREE.BoxGeometry(caseParams.x, caseParams.y, 3); // 3mm thick plate
       const material = new THREE.MeshStandardMaterial({
         color: "#416F5C",
         transparent: true,
       });
       const mesh = new THREE.Mesh(geometry, material);
-      mesh.position.z = -0.5; // Pour que la plaque soit sous la case
+      mesh.position.z = -0.5; // to place it slightly below the origin
 
-      // Ajoute la wireframe avec des traits plus larges
+      // wireframe
       const wireframe = new THREE.WireframeGeometry(geometry);
-      // Note: linewidth > 1 fonctionne seulement sur certains environnements (WebGL1, pas WebGL2)
-      const lineMaterial = new THREE.LineBasicMaterial({
-        color: 0xffffff,
-        linewidth: 4,
-      });
+      const lineMaterial = new THREE.LineBasicMaterial({ color: 0xffffff });
       const frameLine = new THREE.LineSegments(wireframe, lineMaterial);
       mesh.add(frameLine);
 
-      setDefaultPlateMesh(mesh);
+      setMountingPlateMesh(mesh);
     }
   }, [caseParams.x, caseParams.y]);
 
@@ -437,12 +433,12 @@ const MakeCase = (props: { isHidden: boolean }) => {
         </div>
 
         <div className="main-Canvas">
-          {(models.length > 0 || defaultPlateMesh) && (
+          {(models.length > 0 || mountingPlateMesh) && (
             <Scene
               models={models}
               caseMesh={caseMesh}
               lidMesh={lidMesh}
-              defaultPlateMesh={defaultPlateMesh}
+              mountingPlateMesh={mountingPlateMesh}
             />
           )}
         </div>
