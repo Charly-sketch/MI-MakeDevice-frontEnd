@@ -274,14 +274,14 @@ export const makeCase = async (
   caseCSG.material = new THREE.MeshStandardMaterial({
     color: "yellow", //"#ccccFF",
     transparent: true,
-    opacity: 0.6,
+    opacity: caseParams.caseOpacity, //0.6,
   });
   setLidMesh(lidCSG);
 
   lidCSG.material = new THREE.MeshStandardMaterial({
     color: "blue", //"#ccFFcc",
     transparent: true,
-    opacity: 0.6,
+    opacity: caseParams.lidOpacity, //0.6,
   });
   setCaseMesh(caseCSG);
 

@@ -34,8 +34,8 @@ const MakeCase = (props: { isHidden: boolean }) => {
   const mountingDepth = 4;
 
   const [progress, setProgress] = useState(0);
-  const [lidMesh, setLidMesh] = useState(null);
-  const [caseMesh, setCaseMesh] = useState(null);
+  const [lidMesh, setLidMesh] = useState<THREE.Mesh | null>(null);
+  const [caseMesh, setCaseMesh] = useState<THREE.Mesh | null>(null);
   const [showCaseParams, setShowCaseParams] = useState(false);
   const [caseParams, setCaseParams] = useState({
     x: 0,
@@ -51,6 +51,8 @@ const MakeCase = (props: { isHidden: boolean }) => {
     roundnessDetail: 3, // more detail = more polygons, but slower to render.
     mountOptions: 0, // 0: default, 1: flipped, 2: extra screw for height
     batchSize: 15,
+    lidOpacity: 0.5, // 0 to 1, 0 is transparent, 1 is opaque
+    caseOpacity: 0.5, // 0 to 1, 0 is transparent, 1 is opaque
   });
 
   const [levels, setLevels] = useState(1);
@@ -134,6 +136,32 @@ const MakeCase = (props: { isHidden: boolean }) => {
       setMountingPlateMesh(mesh);
     }
   }, [caseParams.x, caseParams.y]);
+
+  // Met à jour l'opacité des meshes en direct
+  useEffect(() => {
+    if (caseMesh && (caseMesh.material as THREE.Material)) {
+      const mat = caseMesh.material as THREE.Material & {
+        opacity?: number;
+        transparent?: boolean;
+        needsUpdate?: boolean;
+      };
+      if (typeof mat.opacity === "number") mat.opacity = caseParams.caseOpacity;
+      if (typeof mat.transparent === "boolean")
+        mat.transparent = caseParams.caseOpacity < 1;
+      if (typeof mat.needsUpdate === "boolean") mat.needsUpdate = true;
+    }
+    if (lidMesh && (lidMesh.material as THREE.Material)) {
+      const mat = lidMesh.material as THREE.Material & {
+        opacity?: number;
+        transparent?: boolean;
+        needsUpdate?: boolean;
+      };
+      if (typeof mat.opacity === "number") mat.opacity = caseParams.lidOpacity;
+      if (typeof mat.transparent === "boolean")
+        mat.transparent = caseParams.lidOpacity < 1;
+      if (typeof mat.needsUpdate === "boolean") mat.needsUpdate = true;
+    }
+  }, [caseParams.lidOpacity, caseParams.caseOpacity, caseMesh, lidMesh]);
 
   // I am not good at making UIs. :(
   return (
