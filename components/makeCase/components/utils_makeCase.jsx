@@ -41,18 +41,27 @@ export const makeCase = async (
     Height = Height + caseParams.screwHeight;
   }
 
-  // Adjust the height based on caseParams
+  sizeX = sizeX + caseParams.xWallThickness + 3;
+  sizeY = sizeY + caseParams.xWallThickness + 3;
+
+  // create the outer mesh
   let outerGeom = new RoundedBoxGeometry(
     sizeX + xExtraThickness,
     sizeY + yExtraThickness,
     Height + zExtraThickness,
-    caseParams.roundnessDetail, //caseParams.roundnessDetails,
+    caseParams.roundnessDetail,
     caseParams.roundness,
   );
-
-  // Create the outer and inner meshes
   let outerMesh = new THREE.Mesh(outerGeom);
-  let innerGeom = new THREE.BoxGeometry(sizeX, sizeY, Height);
+
+  // Create the inner meshes
+  let innerGeom = new RoundedBoxGeometry(
+    sizeX,
+    sizeY,
+    Height,
+    caseParams.roundnessDetail,
+    caseParams.roundness,
+  );
   let innerMesh = new THREE.Mesh(innerGeom);
 
   // Position the outer mesh
@@ -60,11 +69,11 @@ export const makeCase = async (
 
   // Set the position of the case based on caseParams
   if (caseParams.zOrigin != 0) {
-    caseCSG.position.z = caseParams.zOrigin;
+    caseCSG.position.z = caseParams.zOrigin - 5;
   } else if (caseParams.zOrigin == 0 && caseParams.mountOptions != 0) {
-    caseCSG.position.z = Height / 2 - caseParams.screwHeight;
+    caseCSG.position.z = Height / 2 - caseParams.screwHeight - 5;
   } else {
-    caseCSG.position.z = Height / 2;
+    caseCSG.position.z = Height / 2 - 5;
   }
   caseCSG.position.y = caseParams.yOrigin;
   caseCSG.position.x = caseParams.xOrigin;
@@ -74,8 +83,6 @@ export const makeCase = async (
   let totalSteps =
     models.reduce((acc, mod) => acc + mod.stlUrls.length, 0) || 1;
   let doneSteps = 0;
-
-  // -10seconds
 
   // Load each STL model and apply CSG operations
   const mountMeshes = [];
@@ -96,42 +103,11 @@ export const makeCase = async (
         continue;
       }
 
-      // const isMountBack = stl.model_name.includes("_mount_back.stl");
-      // const isMountFront = stl.model_name.includes("_mount_front.stl");
-      // const isMount = isMountBack || isMountFront;
-
       const mesh = new THREE.Mesh(geometry);
       mesh.rotation.set(-Math.PI / 2, rotationY, 0);
       mesh.position.set(position.x, position.y, position.z);
 
-      // if (isMount) {
-      //     const isBack = isMountBack;
-      //     let offset =
-      //         caseParams.mountOptions === 0
-      //             ? isBack
-      //                 ? -(Height / 2) + zExtraThickness / 2 - 0.25
-      //                 : Height / 2 - zExtraThickness * 2 - 2.25
-      //             : isBack
-      //                 ? Height / 2 - zExtraThickness * 2 - 4.25
-      //                 : -(Height / 2) + zExtraThickness / 2 - 4.25;
-
-      //     if (caseParams.mountOptions === 2) {
-      //         const screw = caseParams.screwHeight;
-      //         offset += isBack
-      //             ? screw / 2 + 0.4 * screw + 0.65
-      //             : -screw / 2 - 0.6 * screw - 0.25;
-      //     }
-
-      //     mesh.position.z = caseCSG.position.z + offset;
-      // }
-
       mesh.updateMatrixWorld(true);
-
-      // if (isMount) {
-      //     mountMeshes.push(mesh);
-      // } else {
-      //     subtractMeshes.push(mesh);
-      // }
 
       subtractMeshes.push(mesh);
       updateProgress(1); // Phase 1 for STL loading
@@ -176,22 +152,6 @@ export const makeCase = async (
     await new Promise((r) => setTimeout(r, 0)); // to let the UI update
   }
 
-  // if (mountMeshes.length > 0) {
-  //     const mergedMounts = mountMeshes.reduce((acc, m, i) =>
-  //         i === 0 ? m : CSG.union(acc, m)
-  //     );
-  //     caseCSG = CSG.union(caseCSG, mergedMounts);
-  // }
-
-  // if (subtractMeshes.length > 0) {
-  //     const mergedSubtracts = subtractMeshes.reduce((acc, m, i) =>
-  //         i === 0 ? m : CSG.union(acc, m)
-  //     );
-  //     caseCSG = CSG.subtract(caseCSG, mergedSubtracts);
-  // }
-
-  // Helper function
-
   function updateProgress(phase = 1) {
     doneSteps++;
     let percent = (doneSteps / totalSteps) * 49;
@@ -209,46 +169,7 @@ export const makeCase = async (
   let outerSplitZ =
     caseCSG.position.z +
     (Height + zExtraThickness) -
-    (Height + zExtraThickness) * 0.65;
-  let innerSplitZ =
-    caseCSG.position.z +
-    (Height + zExtraThickness) -
-    (Height + zExtraThickness) * 0.85;
-
-  let sep = new THREE.BoxGeometry(
-    sizeX + xExtraThickness / 2 - 0.1,
-    sizeY + yExtraThickness / 2 - 0.1,
-    outerSplitZ - innerSplitZ + 0.2,
-  );
-
-  let innersep = new THREE.BoxGeometry(
-    sizeX + xExtraThickness / 2 + 0.1,
-    sizeY + yExtraThickness / 2 + 0.1,
-    outerSplitZ - innerSplitZ + 0.2,
-  );
-
-  outerMesh = new THREE.Mesh(sep);
-  innerMesh = new THREE.Mesh(innersep);
-
-  let horizontalSplit = CSG.subtract(outerMesh, innerMesh);
-  horizontalSplit.position.z = (outerSplitZ - innerSplitZ) / 2 + innerSplitZ;
-  horizontalSplit.position.y = caseCSG.position.y;
-  horizontalSplit.position.x = caseCSG.position.x;
-  horizontalSplit.updateMatrix();
-
-  // Lid steal
-  let lidInner = new RoundedBoxGeometry(
-    sizeX + xExtraThickness / 2 - 0.1,
-    sizeY + yExtraThickness / 2 - 0.1,
-    outerSplitZ - innerSplitZ + 0.5,
-    1,
-    0, //caseParams.roundness
-  );
-  let lidInnerMesh = new THREE.Mesh(lidInner);
-  lidInnerMesh.position.z = (outerSplitZ - innerSplitZ) / 2 + innerSplitZ;
-  lidInnerMesh.position.y = caseCSG.position.y;
-  lidInnerMesh.position.x = caseCSG.position.x;
-  lidInnerMesh.updateMatrix();
+    (Height + zExtraThickness) * 0.9;
 
   let lidTop = new RoundedBoxGeometry(
     sizeX + xExtraThickness + 0.1,
@@ -263,15 +184,14 @@ export const makeCase = async (
   lidTopMesh.position.y = caseCSG.position.y;
   lidTopMesh.position.x = caseCSG.position.x;
   lidTopMesh.updateMatrix();
-  let stealLid = CSG.union(lidInnerMesh, lidTopMesh);
 
-  let lidCSG = CSG.intersect(stealLid, caseCSG);
-  caseCSG = CSG.subtract(caseCSG, stealLid);
+  let lidCSG = CSG.intersect(lidTopMesh, caseCSG);
+  let baseCSG = CSG.subtract(caseCSG, lidCSG);
 
   elapsedTime = Date.now() - startingTime;
   console.log("Split case into lid and base in : " + elapsedTime);
 
-  caseCSG.material = new THREE.MeshStandardMaterial({
+  baseCSG.material = new THREE.MeshStandardMaterial({
     color: "yellow", //"#ccccFF",
     transparent: true,
     opacity: caseParams.caseOpacity, //0.6,
@@ -283,7 +203,9 @@ export const makeCase = async (
     transparent: true,
     opacity: caseParams.lidOpacity, //0.6,
   });
-  setCaseMesh(caseCSG);
+
+  setLidMesh(lidCSG);
+  setCaseMesh(baseCSG);
 
   setProgress(100);
   console.log("Progress: 100%");

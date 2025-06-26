@@ -44,9 +44,9 @@ const MakeCase = (props: { isHidden: boolean }) => {
     yOrigin: 0,
     zOrigin: 0,
     screwHeight: 7, // In mm, length of the head of the screw. ¬¬##
-    xWallThickness: 7,
-    yWallThickness: 7,
-    zWallThickness: 7,
+    xWallThickness: 3,
+    yWallThickness: 3,
+    zWallThickness: 3,
     roundness: 5, // 0 makes it square.
     roundnessDetail: 3, // more detail = more polygons, but slower to render.
     mountOptions: 0, // 0: default, 1: flipped, 2: extra screw for height
@@ -126,12 +126,6 @@ const MakeCase = (props: { isHidden: boolean }) => {
       });
       const mesh = new THREE.Mesh(geometry, material);
       mesh.position.z = -0.5; // to place it slightly below the origin
-
-      // wireframe
-      const wireframe = new THREE.WireframeGeometry(geometry);
-      const lineMaterial = new THREE.LineBasicMaterial({ color: 0xffffff });
-      const frameLine = new THREE.LineSegments(wireframe, lineMaterial);
-      mesh.add(frameLine);
 
       setMountingPlateMesh(mesh);
     }
