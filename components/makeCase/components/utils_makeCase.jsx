@@ -188,9 +188,44 @@ export const makeCase = async (
   let lidCSG = CSG.intersect(lidTopMesh, caseCSG);
   let baseCSG = CSG.subtract(caseCSG, lidCSG);
 
+  // screw holes at each corner of the base
+  let screwHoleGeom = new THREE.CylinderGeometry(2, 2, 3, 32);
+  screwHoleGeom.rotateX(Math.PI / 2);
+  let screwSupportGeom = new THREE.CylinderGeometry(4, 4, 3, 32);
+  screwSupportGeom.rotateX(Math.PI / 2);
+
+  // get positions for the screw holes
+  const halfX = (sizeX + xExtraThickness) / 2;
+  const halfY = (sizeY + yExtraThickness) / 2;
+  const offset = 10;
+
+  const corners = [
+    [-halfX + offset, -halfY + offset],
+    [halfX - offset, -halfY + offset],
+    [-halfX + offset, halfY - offset],
+    [halfX - offset, halfY - offset],
+  ];
+  let i = 0;
+  for (const [x, y] of corners) {
+    i++;
+    console.log(`---> ${i} at position: (${x}, ${y})`);
+    let screwHoleMesh = new THREE.Mesh(screwHoleGeom.clone());
+    let screwSupportMesh = new THREE.Mesh(screwSupportGeom.clone());
+    let screwSupport = CSG.subtract(screwSupportMesh, screwHoleMesh);
+    screwSupport.position.set(
+      x,
+      y,
+      -outerSplitZ + caseParams.zWallThickness - 0.1,
+    );
+    screwSupport.updateMatrix();
+    baseCSG = CSG.union(baseCSG, screwSupport);
+    await new Promise((r) => setTimeout(r, 0)); // to let the UI update
+  }
+
   elapsedTime = Date.now() - startingTime;
   console.log("Split case into lid and base in : " + elapsedTime);
 
+  // Set the materials for the base and lid
   baseCSG.material = new THREE.MeshStandardMaterial({
     color: "yellow", //"#ccccFF",
     transparent: true,
