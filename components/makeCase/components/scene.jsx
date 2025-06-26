@@ -15,6 +15,7 @@ export const Scene = memo(
         style={{ background: "white" }}
       >
         <ambientLight />
+        <directionalLight position={[0, 10, 5]} intensity={1} />
 
         {mountingPlateMesh && <primitive object={mountingPlateMesh} />}
 
@@ -36,3 +37,5 @@ export const Scene = memo(
     );
   },
 );
+
+Scene.displayName = "Scene";
