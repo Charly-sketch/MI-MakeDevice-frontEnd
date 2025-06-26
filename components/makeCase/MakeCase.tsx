@@ -20,6 +20,7 @@ import {
   stlDeleteSelected,
 } from "./components/utils_stl";
 import { Settings } from "@mui/icons-material";
+import { m } from "framer-motion";
 
 const MakeCase = (props: { isHidden: boolean }) => {
   const { isHidden } = props;
@@ -53,6 +54,7 @@ const MakeCase = (props: { isHidden: boolean }) => {
     batchSize: 15,
     lidOpacity: 0.5, // 0 to 1, 0 is transparent, 1 is opaque
     caseOpacity: 0.5, // 0 to 1, 0 is transparent, 1 is opaque
+    mountingPlateOpacity: 0.5, // Opacity of the mounting plate
   });
 
   const [levels, setLevels] = useState(1);
@@ -155,7 +157,26 @@ const MakeCase = (props: { isHidden: boolean }) => {
         mat.transparent = caseParams.lidOpacity < 1;
       if (typeof mat.needsUpdate === "boolean") mat.needsUpdate = true;
     }
-  }, [caseParams.lidOpacity, caseParams.caseOpacity, caseMesh, lidMesh]);
+    if (mountingPlateMesh && (mountingPlateMesh.material as THREE.Material)) {
+      const mat = mountingPlateMesh.material as THREE.Material & {
+        opacity?: number;
+        transparent?: boolean;
+        needsUpdate?: boolean;
+      };
+      if (typeof mat.opacity === "number")
+        mat.opacity = caseParams.mountingPlateOpacity;
+      if (typeof mat.transparent === "boolean")
+        mat.transparent = caseParams.mountingPlateOpacity < 1;
+      if (typeof mat.needsUpdate === "boolean") mat.needsUpdate = true;
+    }
+  }, [
+    caseParams.lidOpacity,
+    caseParams.caseOpacity,
+    caseParams.mountingPlateOpacity,
+    caseMesh,
+    lidMesh,
+    mountingPlateMesh,
+  ]);
 
   // I am not good at making UIs. :(
   return (
