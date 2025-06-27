@@ -172,9 +172,9 @@ export const makeCase = async (
     (Height + zExtraThickness) * 0.9;
 
   let lidTop = new RoundedBoxGeometry(
-    sizeX + xExtraThickness + 0.1,
-    sizeY + yExtraThickness + 0.1,
-    Height + zExtraThickness - outerSplitZ + 0.2,
+    sizeX + xExtraThickness + 100,
+    sizeY + yExtraThickness + 100,
+    Height + zExtraThickness - outerSplitZ,
     1,
     0, //caseParams.roundness
   );
@@ -186,7 +186,7 @@ export const makeCase = async (
   lidTopMesh.updateMatrix();
 
   let lidCSG = CSG.intersect(lidTopMesh, caseCSG);
-  let baseCSG = CSG.subtract(caseCSG, lidCSG);
+  let baseCSG = CSG.subtract(caseCSG, lidTopMesh);
 
   updateProgress(phase, totalPhases, totalSteps, doneSteps++);
 
