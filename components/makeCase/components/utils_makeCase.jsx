@@ -16,19 +16,17 @@ export const makeCase = async (
   let startingTime = Date.now();
   let elapsedTime = startingTime;
 
+  let totalPhases = 4;
+  let totalSteps = 4;
+  let phase = 0;
+  let doneSteps = 0;
+
+  console.log("Start initial setup: " + elapsedTime);
+  updateProgress(phase, totalPhases, totalSteps, doneSteps++); // Phase 1 for initial setup
+
   if (!jsonData?.board?.size) return;
 
   let { x: sizeX, y: sizeY } = jsonData.board.size;
-
-  if (caseParams.x != 0) {
-    sizeX = caseParams.x;
-  }
-  if (caseParams.y != 0) {
-    sizeY = caseParams.y;
-  }
-  if (!sizeX || !sizeY) return;
-
-  setProgress(0); //console.log("Progress: 0%");
 
   //  Adjust sizeX and sizeY based on caseParams
   let xExtraThickness = caseParams.xWallThickness;
@@ -38,11 +36,11 @@ export const makeCase = async (
   // Calculate the total height of the case
   let Height = levelGap * levels + mountingDepth * 2;
   if (caseParams.mountOptions == 2) {
-    Height = Height + caseParams.screwHeight;
+    Height += caseParams.screwHeight;
   }
 
   sizeX = sizeX + caseParams.xWallThickness + 3;
-  sizeY = sizeY + caseParams.xWallThickness + 3;
+  sizeY = sizeY + caseParams.yWallThickness + 3;
 
   // create the outer mesh
   let outerGeom = new RoundedBoxGeometry(
@@ -53,6 +51,8 @@ export const makeCase = async (
     caseParams.roundness,
   );
   let outerMesh = new THREE.Mesh(outerGeom);
+
+  updateProgress(phase, totalPhases, totalSteps, doneSteps++); // Phase 1 for initial setup
 
   // Create the inner meshes
   let innerGeom = new RoundedBoxGeometry(
@@ -67,6 +67,8 @@ export const makeCase = async (
   // Position the outer mesh
   let caseCSG = CSG.subtract(outerMesh, innerMesh);
 
+  updateProgress(phase, totalPhases, totalSteps, doneSteps++); // Phase 1 for initial setup
+
   // Set the position of the case based on caseParams
   if (caseParams.zOrigin != 0) {
     caseCSG.position.z = caseParams.zOrigin - 5;
@@ -79,13 +81,17 @@ export const makeCase = async (
   caseCSG.position.x = caseParams.xOrigin;
   caseCSG.updateMatrix();
 
+  updateProgress(phase, totalPhases, totalSteps, doneSteps++); // Phase 1 for initial setup
+
   // CSG manipulation on with STLS and case.
-  let totalSteps =
-    models.reduce((acc, mod) => acc + mod.stlUrls.length, 0) || 1;
-  let doneSteps = 0;
+  elapsedTime = Date.now() - startingTime;
+  console.log("Start Load STL models and apply CSG operations: " + elapsedTime);
+  totalSteps = models.reduce((acc, mod) => acc + mod.stlUrls.length, 0) || 1;
+  phase = 1; // Set phase to 1 for STL loading
+  doneSteps = 0;
 
   // Load each STL model and apply CSG operations
-  const mountMeshes = [];
+  // const mountMeshes = [];
   const subtractMeshes = [];
 
   for (const mod of models) {
@@ -98,7 +104,7 @@ export const makeCase = async (
 
       // Skip if geometry is not loaded or not visible
       if (!geometry || !stl.visible) {
-        updateProgress(1); // Phase 1 for STL loading
+        updateProgress(phase, totalPhases, totalSteps, doneSteps++); // Phase 1 for initial setup
         await new Promise((r) => setTimeout(r, 0)); // to let the UI update
         continue;
       }
@@ -110,60 +116,54 @@ export const makeCase = async (
       mesh.updateMatrixWorld(true);
 
       subtractMeshes.push(mesh);
-      updateProgress(1); // Phase 1 for STL loading
+      updateProgress(phase, totalPhases, totalSteps, doneSteps++); // Phase 1 for initial setup
       await new Promise((r) => setTimeout(r, 0)); // to let the UI update
     }
   }
 
   // Batch CSG union and subtract
+  console.log("CSFG operations on case and STLs");
   const batchSize = caseParams.batchSize || 7; // Variable to control batch size
-  totalSteps =
-    Math.ceil(mountMeshes.length / batchSize) +
-    Math.ceil(subtractMeshes.length / batchSize); // Recalculate total steps after batching for 50% to 100%
+
+  phase = 2; // Set phase to 2 for CSG operations
+  totalSteps = Math.ceil(subtractMeshes.length / batchSize);
   doneSteps = 0;
 
   // Union mountMeshes in batches
-  console.log(
-    `Processing ${mountMeshes.length} mount meshes in batches of ${batchSize}`,
-  );
-  for (let i = 0; i < mountMeshes.length; i += batchSize) {
-    let group = mountMeshes.slice(i, i + batchSize);
-    let merged = group[0];
-    for (let j = 1; j < group.length; j++) {
-      merged = CSG.union(merged, group[j]);
-    }
-    caseCSG = CSG.union(caseCSG, merged);
-    updateProgress(2); // Phase 2 for mount meshes
-    await new Promise((r) => setTimeout(r, 0)); // to let the UI update
-  }
+  // console.log(
+  //   `Processing ${mountMeshes.length} mount meshes in batches of ${batchSize}`,
+  // );
+  // for (let i = 0; i < mountMeshes.length; i += batchSize) {
+  //   let group = mountMeshes.slice(i, i + batchSize);
+  //   let merged = group[0];
+  //   for (let j = 1; j < group.length; j++) {
+  //     merged = CSG.union(merged, group[j]);
+  //   }
+  //   caseCSG = CSG.union(caseCSG, merged);
+  //   updateProgress(2); // Phase 2 for mount meshes
+  //   await new Promise((r) => setTimeout(r, 0)); // to let the UI update
+  // }
 
   // Subtract subtractMeshes in batches
-  console.log(
-    `Processing ${subtractMeshes.length} subtract meshes in batches of ${batchSize}`,
-  );
+  console.log(`Subtract ${subtractMeshes.length} meshes in ${batchSize}`);
   for (let i = 0; i < subtractMeshes.length; i += batchSize) {
+    updateProgress(phase, totalPhases, totalSteps, doneSteps++); // Phase 1 for initial setup
+    await new Promise((r) => setTimeout(r, 0)); // to let the UI update
     let group = subtractMeshes.slice(i, i + batchSize);
     let merged = group[0];
     for (let j = 1; j < group.length; j++) {
       merged = CSG.union(merged, group[j]);
     }
     caseCSG = CSG.subtract(caseCSG, merged);
-    updateProgress(2); // Phase 2 for subtract meshes
-    await new Promise((r) => setTimeout(r, 0)); // to let the UI update
-  }
-
-  function updateProgress(phase = 1) {
-    doneSteps++;
-    let percent = (doneSteps / totalSteps) * 49;
-    if (phase === 2) {
-      percent += 49; // Add 49% for the second phase
-    }
-    setProgress(percent);
-    console.log(`Progress: ${percent}% (${doneSteps}/${totalSteps})`);
   }
 
   elapsedTime = Date.now() - startingTime;
-  console.log("Load STL model in : " + elapsedTime);
+  console.log("Start splitting case: " + elapsedTime);
+  phase = 3; // Set phase to 3 for splitting case into lid and base
+  totalSteps = 7;
+  doneSteps = 0;
+
+  updateProgress(phase, totalPhases, totalSteps, doneSteps++);
 
   // split the case into a lid and base
   let outerSplitZ =
@@ -188,10 +188,12 @@ export const makeCase = async (
   let lidCSG = CSG.intersect(lidTopMesh, caseCSG);
   let baseCSG = CSG.subtract(caseCSG, lidCSG);
 
+  updateProgress(phase, totalPhases, totalSteps, doneSteps++);
+
   // screw holes at each corner of the base
-  let screwHoleGeom = new THREE.CylinderGeometry(2, 2, 3, 32);
+  let screwHoleGeom = new THREE.CylinderGeometry(1, 1, 3, 5);
   screwHoleGeom.rotateX(Math.PI / 2);
-  let screwSupportGeom = new THREE.CylinderGeometry(4, 4, 3, 32);
+  let screwSupportGeom = new THREE.CylinderGeometry(3, 3, 3, 5);
   screwSupportGeom.rotateX(Math.PI / 2);
 
   // get positions for the screw holes
@@ -205,10 +207,8 @@ export const makeCase = async (
     [-halfX + offset, halfY - offset],
     [halfX - offset, halfY - offset],
   ];
-  let i = 0;
+
   for (const [x, y] of corners) {
-    i++;
-    console.log(`---> ${i} at position: (${x}, ${y})`);
     let screwHoleMesh = new THREE.Mesh(screwHoleGeom.clone());
     let screwSupportMesh = new THREE.Mesh(screwSupportGeom.clone());
     let screwSupport = CSG.subtract(screwSupportMesh, screwHoleMesh);
@@ -220,10 +220,8 @@ export const makeCase = async (
     screwSupport.updateMatrix();
     baseCSG = CSG.union(baseCSG, screwSupport);
     await new Promise((r) => setTimeout(r, 0)); // to let the UI update
+    updateProgress(phase, totalPhases, totalSteps, doneSteps++);
   }
-
-  elapsedTime = Date.now() - startingTime;
-  console.log("Split case into lid and base in : " + elapsedTime);
 
   // Set the materials for the base and lid
   baseCSG.material = new THREE.MeshStandardMaterial({
@@ -242,9 +240,26 @@ export const makeCase = async (
   setLidMesh(lidCSG);
   setCaseMesh(baseCSG);
 
-  setProgress(100);
-  console.log("Progress: 100%");
-
   elapsedTime = Date.now() - startingTime;
   console.log("Total time to make case: " + elapsedTime);
+  updateProgress(phase, totalPhases, totalSteps, doneSteps++);
+
+  setProgress(100);
+  console.log("-> Case creation complete!");
+
+  // Function to update progress bar
+  async function updateProgress(
+    phase = 1,
+    totalPhases = 2,
+    totalSteps = 1,
+    doneSteps = 0,
+  ) {
+    doneSteps++;
+    let phaseSize = 100 / totalPhases; // Size of each phase in percentage
+    let percent = (doneSteps / totalSteps) * phaseSize;
+    percent += phase * phaseSize; // Adjust percent based on phase
+    setProgress(percent);
+    console.log(`-> Progress: ${percent.toFixed(2)}% (Phase ${phase})`);
+    await new Promise((r) => setTimeout(r, 1)); // to let the UI update
+  }
 };

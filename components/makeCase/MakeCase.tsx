@@ -49,7 +49,7 @@ const MakeCase = (props: { isHidden: boolean }) => {
     yWallThickness: 3,
     zWallThickness: 3,
     roundness: 5, // 0 makes it square.
-    roundnessDetail: 3, // more detail = more polygons, but slower to render.
+    roundnessDetail: 2, // more detail = more polygons, but slower to render.
     mountOptions: 0, // 0: default, 1: flipped, 2: extra screw for height
     batchSize: 15,
     lidOpacity: 0.5, // 0 to 1, 0 is transparent, 1 is opaque
