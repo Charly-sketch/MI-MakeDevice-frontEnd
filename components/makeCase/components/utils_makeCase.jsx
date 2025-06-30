@@ -221,6 +221,42 @@ export const makeCase = async (
 
   updateProgress(phase, totalPhases, totalSteps, doneSteps++);
 
+  // Create clips for the lid to secure it to the base
+  const clipSize = 2;
+  const clipHeight = 8;
+  const inset = caseParams.xWallThickness - 0.2; // slightly inset in the edge to create tension
+
+  function makeClipMesh(x, y, z) {
+    const geom = new THREE.BoxGeometry(clipSize, clipSize, clipHeight);
+    geom.translate(x, y, z);
+    return new THREE.Mesh(geom);
+  }
+
+  // Clip positions based on the lid size and inset
+  const hX = (sizeX + xExtraThickness) / 2 - inset; // to stick to the edge
+  const hY = (sizeY + yExtraThickness) / 2 - inset; // to stick to the edge
+  const wX = sizeX / 2 - 10; // to put the clip in the corners
+  const wY = sizeY / 2 - 10; // to put the clip in the corners
+
+  const clipPositions = [
+    [+hX, +wX],
+    [+hX, -wX],
+    [-hX, +wX],
+    [-hX, -wX],
+    [+wY, +hY],
+    [-wY, +hY],
+    [+wY, -hY],
+    [-wY, -hY],
+  ];
+
+  for (const [x, y] of clipPositions) {
+    const clip = makeClipMesh(x, y, outerSplitZ); // outerSplitZ is the height of the lid to put them in the middle
+    clip.updateMatrix();
+    lidCSG = CSG.union(lidCSG, clip);
+  }
+
+  setCaseMesh(lidCSG);
+
   // Set the materials for the base and lid
   baseCSG.material = new THREE.MeshStandardMaterial({
     color: "yellow", //"#ccccFF",
