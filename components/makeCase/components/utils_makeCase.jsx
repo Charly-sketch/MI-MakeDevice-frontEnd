@@ -171,6 +171,37 @@ export const makeCase = async (
     (Height + zExtraThickness) -
     (Height + zExtraThickness) * 0.9;
 
+  // screw holes at each corner of the base
+  let screwHoleGeom = new THREE.CylinderGeometry(1, 1, 3, 5);
+  screwHoleGeom.rotateX(Math.PI / 2);
+  let screwSupportGeom = new THREE.CylinderGeometry(3, 3, 3, 5);
+  screwSupportGeom.rotateX(Math.PI / 2);
+
+  // get positions for the screw holes
+  const halfX = (sizeX + xExtraThickness) / 2;
+  const halfY = (sizeY + yExtraThickness) / 2;
+  const offset = 10;
+
+  const signs = [-1, +1];
+  const corners = signs.flatMap((sx) =>
+    signs.map((sy) => [sx * (halfX - offset), sy * (halfY - offset)]),
+  );
+
+  for (const [x, y] of corners) {
+    let screwHoleMesh = new THREE.Mesh(screwHoleGeom.clone());
+    let screwSupportMesh = new THREE.Mesh(screwSupportGeom.clone());
+    let screwSupport = CSG.subtract(screwSupportMesh, screwHoleMesh);
+    screwSupport.position.set(
+      x,
+      y,
+      -outerSplitZ + caseParams.zWallThickness - 0.1,
+    );
+    screwSupport.updateMatrix();
+    caseCSG = CSG.union(caseCSG, screwSupport);
+    await new Promise((r) => setTimeout(r, 0)); // to let the UI update
+    updateProgress(phase, totalPhases, totalSteps, doneSteps++);
+  }
+
   let lidTop = new RoundedBoxGeometry(
     sizeX + xExtraThickness + 100,
     sizeY + yExtraThickness + 100,
@@ -189,39 +220,6 @@ export const makeCase = async (
   let baseCSG = CSG.subtract(caseCSG, lidTopMesh);
 
   updateProgress(phase, totalPhases, totalSteps, doneSteps++);
-
-  // screw holes at each corner of the base
-  let screwHoleGeom = new THREE.CylinderGeometry(1, 1, 3, 5);
-  screwHoleGeom.rotateX(Math.PI / 2);
-  let screwSupportGeom = new THREE.CylinderGeometry(3, 3, 3, 5);
-  screwSupportGeom.rotateX(Math.PI / 2);
-
-  // get positions for the screw holes
-  const halfX = (sizeX + xExtraThickness) / 2;
-  const halfY = (sizeY + yExtraThickness) / 2;
-  const offset = 10;
-
-  const corners = [
-    [-halfX + offset, -halfY + offset],
-    [halfX - offset, -halfY + offset],
-    [-halfX + offset, halfY - offset],
-    [halfX - offset, halfY - offset],
-  ];
-
-  for (const [x, y] of corners) {
-    let screwHoleMesh = new THREE.Mesh(screwHoleGeom.clone());
-    let screwSupportMesh = new THREE.Mesh(screwSupportGeom.clone());
-    let screwSupport = CSG.subtract(screwSupportMesh, screwHoleMesh);
-    screwSupport.position.set(
-      x,
-      y,
-      -outerSplitZ + caseParams.zWallThickness - 0.1,
-    );
-    screwSupport.updateMatrix();
-    baseCSG = CSG.union(baseCSG, screwSupport);
-    await new Promise((r) => setTimeout(r, 0)); // to let the UI update
-    updateProgress(phase, totalPhases, totalSteps, doneSteps++);
-  }
 
   // Set the materials for the base and lid
   baseCSG.material = new THREE.MeshStandardMaterial({
