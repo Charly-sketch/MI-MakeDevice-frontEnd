@@ -160,7 +160,7 @@ export const makeCase = async (
   elapsedTime = Date.now() - startingTime;
   console.log("Start splitting case: " + elapsedTime);
   phase = 3; // Set phase to 3 for splitting case into lid and base
-  totalSteps = 7;
+  totalSteps = 11;
   doneSteps = 0;
 
   updateProgress(phase, totalPhases, totalSteps, doneSteps++);
@@ -250,6 +250,8 @@ export const makeCase = async (
   ];
 
   for (const [x, y] of clipPositions) {
+    updateProgress(phase, totalPhases, totalSteps, doneSteps++);
+    await new Promise((r) => setTimeout(r, 1)); // to let the UI update
     const clip = makeClipMesh(x, y, outerSplitZ); // outerSplitZ is the height of the lid to put them in the middle
     clip.updateMatrix();
     lidCSG = CSG.union(lidCSG, clip);
