@@ -160,7 +160,7 @@ export const makeCase = async (
   elapsedTime = Date.now() - startingTime;
   console.log("Start splitting case: " + elapsedTime);
   phase = 3; // Set phase to 3 for splitting case into lid and base
-  totalSteps = 11;
+  totalSteps = 15;
   doneSteps = 0;
 
   updateProgress(phase, totalPhases, totalSteps, doneSteps++);
@@ -222,7 +222,7 @@ export const makeCase = async (
   updateProgress(phase, totalPhases, totalSteps, doneSteps++);
 
   // Create clips for the lid to secure it to the base
-  const clipSize = 2;
+  const clipSize = 3;
   const clipHeight = 8;
   const inset = caseParams.xWallThickness - 0.2; // slightly inset in the edge to create tension
 
