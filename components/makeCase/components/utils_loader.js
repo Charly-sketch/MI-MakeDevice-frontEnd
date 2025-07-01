@@ -4,40 +4,10 @@ import { stlToggle } from "./utils_stl";
 // React cannot just "see" what files are present so model_names and paths need to be specified.
 // Paths where STL and GLB files are searched for
 const MODEL_PATHS = [
-  "/MakeDevice-modules-main/mounted_modules/renders/",
-  "/MakeDevice-modules-main/virtual_modules/renders/",
+  "MakeDevice-modules-main/models/",
+  "MakeDevice-modules-main/models/",
 ];
-
-// Common suffixes for STL files associated with a module
-const FILE_ENDINGS = [
-  "_req",
-  "_fun",
-  "_microbit_slot",
-  "_1",
-  "_2",
-  "_3",
-  "_4",
-  "_5",
-  "_6",
-  "_mesh_1",
-  "_mesh_2",
-  "_mesh_3",
-  "_mesh_4",
-  "_mesh_5",
-  "_mesh_6",
-  "_mesh_7",
-  "_mesh_8",
-  "_mesh_9",
-  "_mesh_10",
-  "_mesh_11",
-  "_mesh_12",
-  "_mesh_13",
-  "_mesh_14",
-  "_mesh_15",
-  "_mesh_16",
-  "_mesh_17",
-  "_mesh_18",
-]; //"_mount_back", "_mount_front",
+const FILE_ENDINGS = ["_1", "_2", "_3"];
 
 /**
  * Loads models from a list of module model_names from JSON config.
