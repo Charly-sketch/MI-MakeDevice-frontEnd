@@ -1,10 +1,6 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
-
-// import './makeCase.css';
 import * as THREE from "three";
-
 import { makeCase } from "./components/utils_makeCase";
 import { Scene } from "./components/scene";
 import { handleJsonUpload, buildFromJson } from "./components/utils_json";
@@ -19,8 +15,6 @@ import {
   stlAddNew,
   stlDeleteSelected,
 } from "./components/utils_stl";
-import { Settings } from "@mui/icons-material";
-import { m } from "framer-motion";
 
 const MakeCase = (props: { isHidden: boolean }) => {
   const { isHidden } = props;
