@@ -28,14 +28,13 @@ export function exportLidAsStl(mesh) {
 export const stlToggle = (stlIdx, selectedModelIndex, setModels) => {
   if (selectedModelIndex === null) return;
   setModels((prevModels) => {
-    const updated = prevModels.map((mod, idx) => {
+    return prevModels.map((mod, idx) => {
       if (idx !== selectedModelIndex) return mod;
       const stlUrls = mod.stlUrls.map((stl, i) =>
-        i === stlIdx ? { ...stl, visible: !stl.visible } : stl
+        i === stlIdx ? { ...stl, visible: true } : { ...stl, visible: false },
       );
       return { ...mod, stlUrls };
     });
-    return updated;
   });
 };
 
@@ -52,7 +51,7 @@ export const stlUpload = (event, stlIdx, selectedModelIndex, setModels) => {
       const updated = prevModels.map((mod, idx) => {
         if (idx !== selectedModelIndex) return mod;
         const _loadedStls = mod._loadedStls.map((g, i) =>
-          i === stlIdx ? newGeometry : g
+          i === stlIdx ? newGeometry : g,
         );
         const stlUrls = mod.stlUrls.map((meta, i) =>
           i === stlIdx
@@ -63,7 +62,7 @@ export const stlUpload = (event, stlIdx, selectedModelIndex, setModels) => {
                 moveAmount: 0,
                 scaleFactor: 1,
               }
-            : meta
+            : meta,
         );
         return { ...mod, _loadedStls, stlUrls };
       });
@@ -79,7 +78,7 @@ export const stlScaleSave = (stlIdx, factor, setModels, selectedModelIndex) => {
     const updated = prevModels.map((mod, idx) => {
       if (idx !== selectedModelIndex) return mod;
       const stlUrls = mod.stlUrls.map((meta, i) =>
-        i === stlIdx ? { ...meta, scaleFactor: factor } : meta
+        i === stlIdx ? { ...meta, scaleFactor: factor } : meta,
       );
       return { ...mod, stlUrls };
     });
@@ -93,7 +92,7 @@ export const stlMove = (stlIdx, amount, setModels, selectedModelIndex) => {
     const updated = prevModels.map((mod, idx) => {
       if (idx !== selectedModelIndex) return mod;
       const stlUrls = mod.stlUrls.map((meta, i) =>
-        i === stlIdx ? { ...meta, moveAmount: amount } : meta
+        i === stlIdx ? { ...meta, moveAmount: amount } : meta,
       );
       return { ...mod, stlUrls };
     });
@@ -110,7 +109,7 @@ export const stlScale = (modelIdx, stlIdx, setModels) => {
       const geometry = mod._loadedStls[stlIdx].clone();
       geometry.scale.set(scaleFactor, scaleFactor, scaleFactor);
       const _loadedStls = mod._loadedStls.map((g, i) =>
-        i === stlIdx ? geometry : g
+        i === stlIdx ? geometry : g,
       );
       return { ...mod, _loadedStls };
     });
@@ -155,7 +154,7 @@ export const stlDeleteSelected = (
   selectedModelIndex,
   setModels,
   selectedStlIndex,
-  setSelectedStlIndex
+  setSelectedStlIndex,
 ) => {
   if (selectedModelIndex === null || selectedStlIndex === null) return;
   setModels((prevModels) => {

@@ -1,4 +1,5 @@
 import { STLLoader } from "three/examples/jsm/loaders/STLLoader";
+import { stlToggle } from "./utils_stl";
 
 // React cannot just "see" what files are present so model_names and paths need to be specified.
 // Paths where STL and GLB files are searched for
@@ -48,6 +49,7 @@ export const loadModelsFromJson = async (modules, levelGap = 0, onProgress) => {
   const models = [];
 
   for (const mod of modules) {
+    let i = 0;
     for (const path of MODEL_PATHS) {
       const glbUrl = `${path}${mod.model_name}.glb`;
       try {
@@ -60,11 +62,12 @@ export const loadModelsFromJson = async (modules, levelGap = 0, onProgress) => {
             const stlUrl = `${path}${mod.model_name}${suffix}.stl`;
             const geometry = await tryLoadSTL(stlUrl);
             if (geometry) {
+              i++;
               return {
                 meta: {
                   url: stlUrl,
                   model_name: `${mod.model_name}${suffix}.stl`,
-                  visible: true,
+                  visible: i === 1, // Only the first STL is visible by default
                   position: mod.position ? { ...mod.position } : null,
                   axis: "x",
                   moveAmount: 0,

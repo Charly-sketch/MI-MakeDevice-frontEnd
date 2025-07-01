@@ -249,7 +249,7 @@ const MakeCase = (props: { isHidden: boolean }) => {
               ))}
             </select>
 
-            {/* Bouton pour sélectionner/désélectionner tous les STL du module sélectionné */}
+            {/* Bouton pour sélectionner/désélectionner tous les STL du module sélectionné
             {selectedModelIndex !== null && (
               <button
                 className="button-style button-select-all"
@@ -273,15 +273,15 @@ const MakeCase = (props: { isHidden: boolean }) => {
                   ? "Deselect all"
                   : "Select all"}
               </button>
-            )}
+            )} */}
 
             {selectedModelIndex !== null &&
               models[selectedModelIndex].stlUrls.map((stl, idx) => (
                 <div key={idx} style={{ marginBottom: 10 }}>
                   <label>
                     <input
-                      type="checkbox"
-                      checked={stl.visible}
+                      type="radio"
+                      name={selectedModelIndex}
                       onChange={() =>
                         stlToggle(idx, selectedModelIndex, setModels)
                       }
